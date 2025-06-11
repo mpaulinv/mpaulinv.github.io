@@ -45,7 +45,7 @@
   </a>
 
   <!-- Contact Card -->
-  <a href="mailto:your@email.com" style="flex: 1 1 180px; min-width: 180px; max-width: 250px; background: #fffef7; border-radius: 14px; border: 1.5px solid #f5e9a8; box-shadow: 0 2px 12px rgba(139,128,36,0.07); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.2em 1.3em; text-decoration: none; color: #7d7422; font-weight: 600; font-size: 1.13rem; transition: box-shadow 0.18s, border 0.18s;">
+  <a href="mailto:mpaulinv@gmail.com" style="flex: 1 1 180px; min-width: 180px; max-width: 250px; background: #fffef7; border-radius: 14px; border: 1.5px solid #f5e9a8; box-shadow: 0 2px 12px rgba(139,128,36,0.07); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.2em 1.3em; text-decoration: none; color: #7d7422; font-weight: 600; font-size: 1.13rem; transition: box-shadow 0.18s, border 0.18s;">
     <span style="font-size:2.2em; margin-bottom:0.4em;">📬</span>
     Contact
   </a>
