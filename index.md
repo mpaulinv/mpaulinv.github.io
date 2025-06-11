@@ -11,10 +11,14 @@ excerpt: "Data Science Leader | Economics | Machine Learning | Analytics"
 
 **About Me**
 
-I’m a Data Science Manager with a strong foundation in economics and a passion for turning complex data into clear, actionable insights. With several years of experience in the financial sector, I’ve led and delivered analytics and machine learning projects that support decision-making, risk assessment, and operational efficiency.
+Hi, I’m Mario Paulin Vega! Welcome to my portfolio.
 
-My background includes hands-on work in predictive modeling, statistical validation, and data pipeline development, as well as reviewing and improving code for accuracy and performance.
+I’m a Data Scientist with a background in economics and a genuine enthusiasm for making sense of complex data. Over the years, I’ve had the chance to lead projects in the financial sector that use analytics and machine learning to solve real business challenges. I have also worked as an analytics consultant and on academic projects. 
 
-I enjoy leading and mentoring data science teams, helping others grow while fostering a collaborative, impact-driven environment. By combining technical expertise in Python, R, SAS, and SQL with a strategic understanding of business needs, I bridge the gap between data and action. My work in statistical model validation, risk analytics, and process automation has consistently led to improved accuracy, efficiency, and compliance in high-stakes environments.
+I enjoy the hands-on side of data science—building predictive models, validating results, creating data pipelines, and making sure the code is clean and reliable. But what drives me is collaborating with others: leading and mentoring teams, and growing while working together toward meaningful results.
+
+My technical toolkit includes Python, R, SAS, SQL, Hive, and Spark and I enjoy learning new technologies. I’m equally passionate about understanding the bigger picture and connecting data work to strategic decisions. Whether it’s model validation, risk analytics, or automating processes, I’m committed to making data science practical, accurate, and impactful.
+
+Thanks for stopping by. Feel free to explore my projects, check out my CV, or get in touch if you want to connect. 
 
 Explore my [Projects](projects/), view my [CV](cv/), or [Contact me](#contact).
