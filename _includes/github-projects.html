@@ -1,0 +1,19 @@
+<!-- 
+This snippet uses GitHub’s API to show public repos.
+Optionally replace with a manual list, or use a GitHub Action or plugin to sync repos if you want to automate. 
+-->
+
+<ul>
+  {% assign repos = site.github.public_repositories | where: "owner.login", "mpaulinv" %}
+  {% for repo in repos %}
+    <li>
+      <a href="{{ repo.html_url }}">{{ repo.name }}</a> - {{ repo.description }}
+      <br>
+      <small>★ {{ repo.stargazers_count }} | Updated {{ repo.updated_at | date: "%b %d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
+
+<p>
+  <em>See more on <a href="https://github.com/mpaulinv?tab=repositories">GitHub</a>.</em>
+</p>
