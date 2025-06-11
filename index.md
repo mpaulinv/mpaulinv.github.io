@@ -1,9 +1,12 @@
-<div style="display: flex; align-items: flex-start; gap: 2em; flex-wrap: wrap; margin-bottom: 2em;">
+<!-- Responsive flexbox for photo + about -->
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2.2em; margin-bottom: 2.2em;">
 
-  <img src="/assets/images/profile.jpg" alt="Mario Paulin Vega" style="max-width: 180px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.12); flex-shrink: 0;">
+  <!-- Profile Photo -->
+  <img src="/assets/images/profile.jpg" alt="Mario Paulin Vega" style="width: 170px; height: 170px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.08); flex-shrink: 0; background: #f7faf7; border: 4px solid #e0eee0;">
 
-  <div>
-    <h1 style="margin-top: 0;">Hi, I’m Mario Paulin Vega! 👋</h1>
+  <!-- About Text -->
+  <div style="flex: 1; min-width: 260px;">
+    <h1 style="margin-top: 0; font-size: 2rem; font-weight: 600;">Hi, I’m Mario Paulin Vega!</h1>
 
     <p>
       Welcome to my portfolio. I’m a Data Science Manager with a background in economics and a genuine enthusiasm for making sense of complex data.
@@ -26,14 +29,37 @@
   </div>
 </div>
 
-<div style="display: flex; gap: 1.5em; flex-wrap: wrap; justify-content: flex-start; margin-bottom: 2em;">
-  <a href="/projects/" style="display: inline-block; background: #e7fbe7; border-radius: 10px; padding: 1.2em 2em; text-decoration: none; color: #235c2c; font-weight: bold; box-shadow: 0 1px 4px rgba(0,0,0,0.05); min-width: 140px; text-align: center; border: 1px solid #90d29a;">
-    💡 Projects
+<!-- Professional tiles/cards for navigation -->
+<div style="display: flex; gap: 2em; flex-wrap: wrap; margin-bottom: 3em;">
+
+  <!-- Projects Card -->
+  <a href="/projects/" style="flex: 1 1 180px; min-width: 180px; max-width: 250px; background: #f7fff8; border-radius: 14px; border: 1.5px solid #b4ecc4; box-shadow: 0 2px 12px rgba(36,139,69,0.07); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.2em 1.3em; text-decoration: none; color: #285a37; font-weight: 600; font-size: 1.13rem; transition: box-shadow 0.18s, border 0.18s;">
+    <span style="font-size:2.2em; margin-bottom:0.4em;">💡</span>
+    Projects
   </a>
-  <a href="/cv/" style="display: inline-block; background: #f0f4f8; border-radius: 10px; padding: 1.2em 2em; text-decoration: none; color: #324960; font-weight: bold; box-shadow: 0 1px 4px rgba(0,0,0,0.05); min-width: 140px; text-align: center; border: 1px solid #c1c8d6;">
-    📄 CV
+
+  <!-- CV Card -->
+  <a href="/cv/" style="flex: 1 1 180px; min-width: 180px; max-width: 250px; background: #f5fafc; border-radius: 14px; border: 1.5px solid #bed8e6; box-shadow: 0 2px 12px rgba(44,92,126,0.07); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.2em 1.3em; text-decoration: none; color: #34506a; font-weight: 600; font-size: 1.13rem; transition: box-shadow 0.18s, border 0.18s;">
+    <span style="font-size:2.2em; margin-bottom:0.4em;">📄</span>
+    CV
   </a>
-  <a href="mailto:your@email.com" style="display: inline-block; background: #f9fbe7; border-radius: 10px; padding: 1.2em 2em; text-decoration: none; color: #777b19; font-weight: bold; box-shadow: 0 1px 4px rgba(0,0,0,0.05); min-width: 140px; text-align: center; border: 1px solid #e2e6ac;">
-    📬 Contact
+
+  <!-- Contact Card -->
+  <a href="mailto:your@email.com" style="flex: 1 1 180px; min-width: 180px; max-width: 250px; background: #fffef7; border-radius: 14px; border: 1.5px solid #f5e9a8; box-shadow: 0 2px 12px rgba(139,128,36,0.07); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.2em 1.3em; text-decoration: none; color: #7d7422; font-weight: 600; font-size: 1.13rem; transition: box-shadow 0.18s, border 0.18s;">
+    <span style="font-size:2.2em; margin-bottom:0.4em;">📬</span>
+    Contact
   </a>
+
 </div>
+
+<style>
+/* Add tile/card hover effect */
+a[style*="box-shadow"] {
+  transition: box-shadow 0.18s, border 0.18s;
+}
+a[style*="box-shadow"]:hover {
+  box-shadow: 0 8px 24px rgba(36,139,69,0.13) !important;
+  border-color: #41b66e !important;
+  text-decoration: none !important;
+}
+</style>
