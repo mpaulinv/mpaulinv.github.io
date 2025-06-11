@@ -1,0 +1,59 @@
+title: "Mario Paulin Vega"
+email: "your@email.com"
+description: >-
+  Personal website and portfolio of Mario Paulin Vega. 
+  Showcasing projects, CV, and contact information.
+
+baseurl: "" # Leave blank for user.github.io
+url: "https://mpaulinv.github.io"
+
+# Minimal Mistakes settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "air" # Light, professional
+
+# Social
+author:
+  name: "Mario Paulin Vega"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Software developer and data enthusiast."
+  location: "Your City, Country"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/mpaulinv"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/YOUR-LINKEDIN/"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:your@email.com"
+
+# Collections for projects
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+
+# Build settings for GitHub Pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Google Analytics (optional)
+google_analytics: ""
