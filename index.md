@@ -6,8 +6,7 @@
 
   <!-- About Text -->
   <div style="flex: 1; min-width: 300px;">
-    <h1 style="margin-top: 0; font-size: 2.4rem; font-weight: 700; color: #1a202c; margin-bottom: 0.5em;">Hi, I'm Mario Paulin Vega!</h1>
-    <h2 style="font-size: 1.2rem; font-weight: 400; color: #4a5568; margin-bottom: 1.5em; letter-spacing: 0.5px;">Data Science Manager | Economics | Machine Learning</h2>
+    <h2 style="font-size: 1.2rem; font-weight: 400; color: #4a5568; margin-bottom: 1.5em; letter-spacing: 0.5px; margin-top: 0;">Data Science Manager | Economics | Machine Learning</h2>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.2em;">
       Welcome to my portfolio. I'm a Data Science Manager with a background in economics and a genuine enthusiasm for making sense of complex data.
@@ -33,11 +32,11 @@
       Projects
     </a>
     
-    <a href="/cv/" style="text-decoration: none; color: #2d3748; font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 600; letter-spacing: 0.5px; border-bottom: 3px solid #f5576c; padding-bottom: 0.3em; transition: all 0.3s ease;">
+    <a href="/cv/" style="text-decoration: none; color: #2d3748; font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 600; letter-spacing: 0.5px; border-bottom: 3px solid #667eea; padding-bottom: 0.3em; transition: all 0.3s ease;">
       Curriculum Vitae
     </a>
     
-    <a href="mailto:mpaulinv@gmail.com" style="text-decoration: none; color: #2d3748; font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 600; letter-spacing: 0.5px; border-bottom: 3px solid #00f2fe; padding-bottom: 0.3em; transition: all 0.3s ease;">
+    <a href="mailto:mpaulinv@gmail.com" style="text-decoration: none; color: #2d3748; font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 600; letter-spacing: 0.5px; border-bottom: 3px solid #667eea; padding-bottom: 0.3em; transition: all 0.3s ease;">
       Contact
     </a>
     
