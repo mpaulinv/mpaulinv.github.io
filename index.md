@@ -13,7 +13,7 @@
     </p>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.2em;">
-      I enjoy the hands-on side of data science—building predictive models, validating results, creating data pipelines, and making sure the code is clean and reliable. But what really drives me is collaborating with      others: leading and mentoring teams, and helping people grow while working together toward meaningful results.
+      I enjoy the hands-on side of data science—building predictive models, validating results, creating data pipelines, and making sure the code is clean and reliable. But what really drives me is collaborating with      others: leading and mentoring teams, and growing with my team while working together toward meaningful results.
     </p>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748;">
