@@ -9,7 +9,7 @@ url: "https://mpaulinv.github.io"
 
 # Minimal Mistakes settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "air" # Light, professional
+minimal_mistakes_skin: "mint" # Light, professional
 
 # Social
 author:
