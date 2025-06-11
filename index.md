@@ -9,17 +9,15 @@
     <h2 style="font-size: 1.2rem; font-weight: 400; color: #4a5568; margin-bottom: 1.5em; letter-spacing: 0.5px; margin-top: 0;">Data Science Manager | Economics | Machine Learning</h2>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.2em;">
-      Welcome to my portfolio. I'm a Data Science Manager with a background in economics and a genuine enthusiasm for making sense of complex data.
-      Over the years, I've led projects in the financial sector that use analytics and machine learning to solve real business challenges.
+      Welcome to my portfolio. I’m a Data Scientist with a background in economics and a genuine enthusiasm for making sense of complex data. Over the years, I’ve had the chance to lead teams and projects in the financial        sector using analytics and machine learning to solve real business challenges.
     </p>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.2em;">
-      I enjoy the hands-on side of data science: building predictive models, validating results, creating data pipelines, and ensuring code quality.
-      What drives me is collaborating with others—leading and mentoring teams while working together toward meaningful results.
+      I enjoy the hands-on side of data science—building predictive models, validating results, creating data pipelines, and making sure the code is clean and reliable. But what really drives me is collaborating with      others: leading and mentoring teams, and helping people grow while working together toward meaningful results.
     </p>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748;">
-      My technical expertise includes Python, R, SAS, and SQL, combined with strategic business understanding to connect data work to actionable decisions.
+      My technical toolkit includes Python, R, SAS, SQL, Hive, and Spark, and I love learning new technologies. I’m equally passionate about understanding the bigger picture and connecting data work to strategic decisions. Whether it’s model validation, risk analytics,       or automating processes, I’m committed to making data science practical, accurate, and impactful.
     </p>
   </div>
 </div>
