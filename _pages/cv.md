@@ -12,8 +12,8 @@ layout: single
 </div>
 
 <div style="border-bottom: 2px solid #e2e8f0; margin-bottom: 2em; padding-bottom: 1em;">
-  <h2 style="color: #4a5568; font-size: 1.1rem; font-weight: 400; margin: 0;">Data Science Manager | Economics | Analytics & Machine Learning</h2>
-  <p style="color: #718096; margin: 0.5em 0 0 0;">📧 mpaulinv@gmail.com | 📱 +1 (XXX) XXX-XXXX | 🔗 LinkedIn | 📍 Location</p>
+  <h2 style="color: #4a5568; font-size: 1.1rem; font-weight: 400; margin: 0;">Data Science | Economics | Analytics & Machine Learning</h2>
+  <p style="color: #718096; margin: 0.5em 0 0 0;">📧 mpaulinv@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/mario-paulin-vega/)
 </div>
 
 ## Professional Experience
