@@ -1,23 +1,82 @@
 - repo: elliptic-bitcoin-aml
   tab: Cryptocurrency AML Detection
   url: https://github.com/mpaulinv/elliptic-bitcoin-aml
-  description: Repository for the cryptocurrency AML detection project
-  language: Python
+  description: Detecting illicit Bitcoin transactions with graph features and ML.
+  why: >
+    Cryptocurrency is often used for illicit activities due to its pseudonymous nature. Detecting money laundering patterns is crucial for financial security and regulatory compliance.
+  overview: >
+    This project analyzes the Elliptic Bitcoin dataset to identify and predict illicit transactions using graph-based feature engineering, machine learning, and graph neural networks.
+  methods: |
+    - Graph-based feature engineering (centrality, clustering)
+    - Random Forest and Graph Attention Network (GAT) models
+    - Exploratory data analysis, visualization, and data drift assessment
+  results: >
+    The Random Forest model, combined with engineered features, outperformed GAT on test data. Visualizations—scatterplots, heatmaps, and graph side-by-sides—revealed key patterns of illicit activity.
+  impact: >
+    Demonstrates the power of feature engineering for financial crime detection and provides insights for regulators and exchanges to improve AML monitoring.
+  images:
+    - /assets/images/elliptic-scatterplot.png
+    - /assets/images/elliptic-graph-visualization.png
 
 - repo: heart_disease
   tab: Heart Disease Prediction
   url: https://github.com/mpaulinv/heart_disease
-  description: Repository for the heart disease prediction project
-  language: Jupyter Notebook
+  description: End-to-end ML pipeline for predicting heart disease risk.
+  why: >
+    Heart disease is a leading cause of death worldwide. Early prediction can enable preventative healthcare and save lives.
+  overview: >
+    This project analyzes the Cleveland Heart Disease dataset to discover risk factors and build interpretable predictive models using logistic regression and Random Forest.
+  methods: |
+    - Exploratory data analysis and visualization
+    - Feature engineering (interaction terms, dummy variables)
+    - Logistic regression and Random Forest modeling
+    - Model evaluation (AUC, F1-score, feature importance)
+  results: >
+    Models achieved high accuracy and provided interpretable coefficients and feature importances. Visualizations highlight key risk factors such as age, cholesterol, and chest pain type.
+  impact: >
+    Enables clinicians and patients to better understand and predict heart disease risk using accessible data-driven insights.
+  images:
+    - /assets/images/heart-feature-importance.png
+    - /assets/images/heart-roc-curve.png
 
 - repo: lichess_dashboard
   tab: Chess Performance Dashboard
   url: https://github.com/mpaulinv/lichess_dashboard
-  description: Lichess chess analysis and dashboard tools.
-  language: Python
+  description: Visualize and analyze your chess games with an interactive dashboard.
+  why: >
+    Self-analysis is critical for chess improvement. This dashboard puts powerful analytics and visualizations in the hands of every player.
+  overview: >
+    A Streamlit dashboard that connects to Lichess to analyze your rating progression, opening repertoire, win rates, and more, all with interactive charts and filters.
+  methods: |
+    - Data extraction from the Lichess API
+    - Data processing with Pandas and NumPy
+    - Interactive visualizations with Plotly
+    - Streamlit for dashboard UI and user interaction
+  results: >
+    Provides quick insights into rating trends, opening strengths, and performance by color or variant. Users can filter, drill down, and export data for further analysis.
+  impact: >
+    Empowers chess players of all levels to identify strengths and weaknesses, track progress, and make data-driven improvements.
+  images:
+    - /assets/images/lichess-dashboard-overview.png
+    - /assets/images/lichess-opening-performance.png
 
 - repo: roberta_qa
   tab: Question Answering with RoBERTa
   url: https://github.com/mpaulinv/roberta_qa
-  description: Question answering system using the RoBERTa model.
-  language: Python
+  description: Researching RoBERTa’s performance on causal "why" questions in QA.
+  why: >
+    Modern NLP models struggle with complex reasoning tasks, especially "why" questions. Improving these capabilities is vital for trustworthy AI.
+  overview: >
+    This research investigates RoBERTa’s limitations on "why" questions using SQuAD and adversarial datasets, and tests data augmentation and transfer learning solutions.
+  methods: |
+    - Error analysis of model predictions
+    - Data augmentation (TextAttack, CLARE)
+    - Fine-tuning on specialized datasets (Quoref)
+    - Performance evaluation (accuracy, F1, EM)
+  results: >
+    RoBERTa’s accuracy on "why" questions lags behind other types, with significant drops on adversarial data. Data augmentation showed limited gains; fine-tuning on targeted datasets helped marginally.
+  impact: >
+    Highlights the need for better data and model strategies for causal reasoning in QA, and informs future research directions in NLP.
+  images:
+    - /assets/images/roberta-qa-results.png
+    - /assets/images/roberta-error-analysis.png
