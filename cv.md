@@ -5,7 +5,7 @@ layout: single
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5em; flex-wrap: wrap; gap: 1em;">
-  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Mario Pauin Vega</h1>
+  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Mario Paulin Vega</h1>
   <a href="/assets/files/mario-paulin-vega-cv.pdf" download style="background: #667eea; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2); transition: all 0.3s ease;">
     📥 Download PDF
   </a>
@@ -19,7 +19,7 @@ layout: single
 ## Education
 
 **The University of Texas at Austin**  
-MSc in Data Science (Expected December 2024)  
+MSc in Data Science, December 2024  
 MSc in Economics  
 
 **ITAM**  
@@ -29,7 +29,7 @@ Bachelor in Economics, Finance Track, With Honors
 ## Professional Experience
 
 ### Team Lead | CitiBanamex, Anti-Money Laundering Division | Mexico City, Mexico | 2020 – 2024
-- Led a team of 3 data scientists validating ~100 regulatory models across LATAM, US, and Canada, achieving zero audit findings.
+- Led a team of 3 data scientists validating  around 100 regulatory models across LATAM, US, and Canada, achieving zero audit findings.
 - Integrated validation insights into compliance workflows, improving data integrity and strategic decision-making.
 - Streamlined global processes through automation and developed methodologies for more efficient operations.
 - Mentored junior team members and led initiatives that improved control processes by 15%.
@@ -54,32 +54,26 @@ Bachelor in Economics, Finance Track, With Honors
 ## Skills
 
 - **Programming**: Python (Pandas, NumPy, Scikit-learn, PyTorch), R, SAS, Stata  
-- **Big Data & Cloud**: SQL, Hive, Spark, Hadoop, GCP  
-- **Visualization**: ggplot2, Matplotlib, Seaborn, Power BI  
+- **Big Data & Cloud**: SQL, Hive, Spark, Hadoop, Google Cloud Platform   
+- **Visualization**: Matplotlib, Seaborn, Power BI, ggplot2  
 - **Machine Learning**: Regression, Clustering, Decision Trees, Random Forest, Neural Networks  
 - **Statistics & Econometrics**: Hypothesis Testing, Causal Inference, Panel Data Methods
 
 ## Certifications and Courses
 
-- Harnessing Language Models: Your Path to NLP Expert (2024)  
+- Harnessing Language Models: Your Path to NLP Expert - Barcelona School of Economics one week onsite workshop (2024)  
 - Certified Anti-Money Laundering Specialist – ACAMS (2021)
 
-## Projects
-
-- **[Cryptocurrency AML Detection (2025)](https://github.com/mpaulinv/elliptic-bitcoin-aml)**  
-  Applied GNNs to the Elliptic dataset to classify Bitcoin transactions for financial crime detection.
-
-- **[Clinical Risk Prediction (2025)](https://github.com/mpaulinv/heart_disease)**  
-  Built ensemble models to predict cardiovascular risk from clinical indicators with a focus on model interpretability.
-
-- **[Chess Analytics Platform (2025)](https://github.com/mpaulinv/lichess_dashboard)**  
-  Designed an end-to-end dashboard using the Lichess API to analyze game performance and player stats.
+## Volunteering Activities
+### Data Quality Analyst | Statistics Without Borders | 2025 
+- Supporting the development of a white paper on the application of AI within NGOs by ensuring data quality, consistency, and methodological rigor.
+- Contributing to a project focused on leveraging NLP and automation to address bottlenecks in sustainability reporting, with an emphasis on improving efficiency and data transparency.
 
 ## Languages
 
 - Spanish (Native)  
 - English (Fluent)
-
+- Italian (Elementary)
 <style>
 /* Professional styling for CV */
 h2 {
