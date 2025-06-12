@@ -1,5 +1,5 @@
 title: "Mario Paulin Vega"
-email: "your@email.com"
+email: "mpaulinv@gmail.com"
 description: >-
   Personal website and portfolio of Mario Paulin Vega. 
   Showcasing projects, CV, and contact information.
@@ -15,7 +15,7 @@ minimal_mistakes_skin: "mint" # Light, professional
 author:
   name: "Mario Paulin Vega"
   avatar: "/assets/images/profile.jpg"
-  bio: "Software developer and data enthusiast."
+  bio: "Data Science Manager | Economics | Machine Learning"
   location: "Your City, Country"
   links:
     - label: "GitHub"
@@ -23,10 +23,14 @@ author:
       url: "https://github.com/mpaulinv"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/YOUR-LINKEDIN/"
+      url: "https://www.linkedin.com/in/mario-paulin-vega/"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:your@email.com"
+      url: "mailto:mpaulinv@gmail.com"
+
+# Include pages folder - THIS IS THE KEY FIX
+include:
+  - _pages
 
 # Collections for projects
 collections:
@@ -40,11 +44,19 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
 
-# Defaults
+# Defaults - Updated to include pages
 defaults:
+  # Projects
   - scope:
       path: ""
       type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+  # Pages (including CV)
+  - scope:
+      path: "_pages"
+      type: "pages"
     values:
       layout: "single"
       author_profile: true
