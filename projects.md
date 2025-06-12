@@ -64,7 +64,7 @@ layout: single
 <!-- Tab navigation -->
 <div class="project-tabs" id="projectTabs">
   {% assign repos = site.github.public_repositories | where: "owner.login", "mpaulinv" %}
-  {% assign filtered_repos = repos | reject: 'name', 'mpaulin' | reject: 'name', 'mpaulin.github.io' %}
+  {% assign filtered_repos = repos | reject: 'name', 'mpaulinv' | reject: 'name', 'mpaulinv.github.io' %}
   {% for repo in filtered_repos %}
     <button class="project-tab{% if forloop.first %} active{% endif %}" data-tab="project{{ forloop.index }}">
       {{ repo.name | replace: '-', ' ' | capitalize }}
