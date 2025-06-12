@@ -2,18 +2,24 @@
   tab: Cryptocurrency AML Detection
   url: https://github.com/mpaulinv/elliptic-bitcoin-aml
   description: Detecting illicit Bitcoin transactions with graph features and ML.
-  why: >
-    Cryptocurrency is often used for illicit activities due to its pseudonymous nature. Detecting money laundering patterns is crucial for financial security and regulatory compliance.
-  overview: >
-    This project analyzes the Elliptic Bitcoin dataset to identify and predict illicit transactions using graph-based feature engineering, machine learning, and graph neural networks.
+  objective: >
+    Detect and analyze illicit transactions in the Bitcoin blockchain using advanced graph-based features and machine learning, with the aim of supporting anti-money laundering (AML) efforts.
+  data: >
+    The Elliptic Bitcoin dataset consists of transaction-level data, featuring nodes (transactions), edges (relationships), time-steps, and ground-truth labels (licit, illicit, unknown). The data is highly imbalanced and temporally structured, covering a significant regulatory event.
   methods: |
-    - Graph-based feature engineering (centrality, clustering)
-    - Random Forest and Graph Attention Network (GAT) models
-    - Exploratory data analysis, visualization, and data drift assessment
-  results: >
-    The Random Forest model, combined with engineered features, outperformed GAT on test data. Visualizations—scatterplots, heatmaps, and graph side-by-sides—revealed key patterns of illicit activity.
-  impact: >
-    Demonstrates the power of feature engineering for financial crime detection and provides insights for regulators and exchanges to improve AML monitoring.
+    - Graph-based feature engineering (centrality, clustering, ego networks)
+    - Exploratory data analysis: feature distributions, correlations, network visualization
+    - Machine learning: Random Forest with hyperparameter tuning
+    - Deep learning: Graph Attention Network (GAT) for relational patterns
+    - Evaluation: Temporal holdout split, accuracy, ROC, confusion matrix
+    - Drift analysis: Data drift and regulatory shifts
+  key_results: >
+    Random Forest with engineered graph features outperformed GAT in illicit transaction detection. Graph properties were critical for performance. Visualizations exposed key patterns and drift in illicit activity, especially around regulatory changes.
+  visualizations: |
+    - Scatterplots of graph features vs. class labels
+    - Correlogram heatmaps of feature correlations
+    - Network diagrams: predicted vs. actual illicit activity by time-step
+    - ROC curves for model comparison
   images:
     - /assets/images/elliptic-scatterplot.png
     - /assets/images/elliptic-graph-visualization.png
