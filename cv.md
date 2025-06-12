@@ -66,8 +66,8 @@ Bachelor in Economics, Finance Track, With Honors
 
 ## Volunteering Activities
 ### Data Quality Analyst | Statistics Without Borders | 2025 
-- Supporting the development of a white paper on the application of AI within NGOs by ensuring data quality, consistency, and methodological rigor.
-- Contributing to a project focused on leveraging NLP and automation to address bottlenecks in sustainability reporting, with an emphasis on improving efficiency and data transparency.
+- Supported the development of a white paper on the application of AI within NGOs.
+- Participated in a project focused on leveraging NLP and automation to address bottlenecks in sustainability reporting, with an emphasis on improving efficiency and data transparency.
 
 ## Languages
 
