@@ -23,13 +23,13 @@ layout: single
   <img src="/assets/images/project1-visualization.png" alt="Project 1 Visualization" style="width: 100%; height: auto;">
 </div>
 
-<div id="project2" class="tab-content" style="display: none;">
+<div id="project2" class="tab-content">
   <h2>Project 2: Credit Scoring Optimization</h2>
   <p>This project optimized credit scoring processes using predictive modeling...</p>
   <img src="/assets/images/project2-visualization.png" alt="Project 2 Visualization" style="width: 100%; height: auto;">
 </div>
 
-<div id="project3" class="tab-content" style="display: none;">
+<div id="project3" class="tab-content">
   <h2>Project 3: Fraud Detection System</h2>
   <p>This project implemented a fraud detection system using advanced analytics...</p>
   <img src="/assets/images/project3-visualization.png" alt="Project 3 Visualization" style="width: 100%; height: auto;">
@@ -59,19 +59,37 @@ layout: single
 
 .tab-content {
   display: none;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.tab-content:target {
+.tab-content.active {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
 
 <script>
+/* JavaScript for tab switching */
 function showProject(projectId) {
+  // Hide all tabs
   const tabs = document.querySelectorAll('.tab-content');
-  tabs.forEach(tab => tab.style.display = 'none');
-  
+  tabs.forEach(tab => tab.classList.remove('active'));
+
+  // Show selected tab
   const selectedTab = document.getElementById(projectId);
-  selectedTab.style.display = 'block';
+  selectedTab.classList.add('active');
 }
+
+// Show the first tab by default on page load
+document.addEventListener('DOMContentLoaded', () => {
+  showProject('project1');
+});
 </script>
