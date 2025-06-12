@@ -4,8 +4,15 @@ permalink: /projects/
 layout: single
 ---
 
+{% assign projects_list = 
+  [
+    {"repo": "awesome-ml-project", "tab": "Awesome ML Project"},
+    {"repo": "portfolio-website", "tab": "Portfolio Website"},
+    {"repo": "data-viz-tools", "tab": "Data Visualization Tools"}
+  ]
+%}
+
 <style>
-/* Sleek Project Tabs Styles */
 .project-tabs {
   display: flex;
   border-bottom: 2px solid #e5e7eb;
@@ -20,13 +27,13 @@ layout: single
   background: none;
   border: none;
   font-size: 1.08em;
-  font-weight: 500; /* Not bold, but not light */
+  font-weight: 500;
   color: #374151;
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s, color 0.2s, background 0.2s;
   letter-spacing: 0.02em;
   border-radius: 8px 8px 0 0;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .project-tab.active {
@@ -63,34 +70,38 @@ layout: single
 
 <!-- Tab navigation -->
 <div class="project-tabs" id="projectTabs">
-  {% assign repos = site.github.public_repositories | where: "owner.login", "mpaulinv" %}
-  {% assign filtered_repos = repos | reject: 'name', 'mpaulinv' | reject: 'name', 'mpaulinv.github.io' %}
-  {% for repo in filtered_repos %}
+  {% for project in projects_list %}
     <button class="project-tab{% if forloop.first %} active{% endif %}" data-tab="project{{ forloop.index }}">
-      {{ repo.name | replace: '-', ' ' | capitalize }}
+      {{ project.tab }}
     </button>
   {% endfor %}
 </div>
 
 <!-- Tab contents -->
-{% for repo in filtered_repos %}
+{% assign repos = site.github.public_repositories | where: "owner.login", "mpaulinv" %}
+{% for project in projects_list %}
+  {% assign repo = repos | where: "name", project.repo | first %}
   <div class="project-content{% if forloop.first %} active{% endif %}" id="project{{ forloop.index }}">
-    <h2 style="font-weight:500; font-family:'Inter','Segoe UI','system-ui',sans-serif;">
-      <a href="{{ repo.html_url }}" target="_blank" rel="noopener" style="color:#2563eb;text-decoration:none;">
-        {{ repo.name }}
-      </a>
-    </h2>
-    <p>{{ repo.description | default: "No description provided." }}</p>
-    <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; color: #4b5563;">
-      <li>
-        <strong>Language:</strong> {{ repo.language | default: "N/A" }}
-        &nbsp;|&nbsp;
-        <strong>★</strong> {{ repo.stargazers_count }}
-        &nbsp;|&nbsp;
-        <strong>Last updated:</strong> {{ repo.updated_at | date: "%b %d, %Y" }}
-      </li>
-    </ul>
-    <a href="{{ repo.html_url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+    {% if repo %}
+      <h2 style="font-weight:500; font-family:'Inter','Segoe UI','system-ui',sans-serif;">
+        <a href="{{ repo.html_url }}" target="_blank" rel="noopener" style="color:#2563eb;text-decoration:none;">
+          {{ project.tab }}
+        </a>
+      </h2>
+      <p>{{ repo.description | default: "No description provided." }}</p>
+      <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; color: #4b5563;">
+        <li>
+          <strong>Language:</strong> {{ repo.language | default: "N/A" }}
+          &nbsp;|&nbsp;
+          <strong>★</strong> {{ repo.stargazers_count }}
+          &nbsp;|&nbsp;
+          <strong>Last updated:</strong> {{ repo.updated_at | date: "%b %d, %Y" }}
+        </li>
+      </ul>
+      <a href="{{ repo.html_url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+    {% else %}
+      <p>Repository not found: {{ project.repo }}</p>
+    {% endif %}
   </div>
 {% endfor %}
 
