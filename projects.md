@@ -51,14 +51,46 @@ layout: single
   display: block;
 }
 
+.project-section-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.3em;
+  margin-top: 1.3em;
+}
+
+.project-images {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+.project-images img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(80,90,120,0.10);
+  border: 1px solid #e5e7eb;
+}
+@media (max-width: 600px) {
+  .project-images {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .project-images img {
+    max-width: 100%;
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 </style>
 
-<h1>Projects</h1>
-<p>Explore my open source work. Click a tab to view details about each project.</p>
+<h1 style="font-family:'Inter','Segoe UI','system-ui',sans-serif; font-weight:600; letter-spacing:0.01em;">Projects</h1>
+<p style="font-family:'Inter','Segoe UI','system-ui',sans-serif;">Explore my open source work. Click a tab to view details about each project.</p>
 
 <!-- Tab navigation -->
 <div class="project-tabs" id="projectTabs">
@@ -77,12 +109,41 @@ layout: single
         {{ project.tab }}
       </a>
     </h2>
-    <p>{{ project.description }}</p>
-    <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; color: #4b5563;">
-      <li>
-        <strong>Language:</strong> {{ project.language | default: "N/A" }}
-      </li>
-    </ul>
+    <p style="font-style:italic; color:#64748b;">{{ project.description }}</p>
+
+    {% if project.why %}
+      <div class="project-section-title">Why it matters</div>
+      <p>{{ project.why }}</p>
+    {% endif %}
+
+    {% if project.overview %}
+      <div class="project-section-title">Overview</div>
+      <p>{{ project.overview }}</p>
+    {% endif %}
+
+    {% if project.methods %}
+      <div class="project-section-title">Key Methods & Techniques</div>
+      <div style="white-space:pre-line;">{{ project.methods }}</div>
+    {% endif %}
+
+    {% if project.results %}
+      <div class="project-section-title">Results & Visuals</div>
+      <p>{{ project.results }}</p>
+    {% endif %}
+
+    {% if project.images %}
+      <div class="project-images">
+        {% for image in project.images %}
+          <img src="{{ image }}" alt="Project image: {{ project.tab }} {{ forloop.index }}">
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if project.impact %}
+      <div class="project-section-title">Lessons Learned / Impact</div>
+      <p>{{ project.impact }}</p>
+    {% endif %}
+
     <a href="{{ project.url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
   </div>
 {% endfor %}
