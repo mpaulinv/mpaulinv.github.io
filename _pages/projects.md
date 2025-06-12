@@ -4,92 +4,95 @@ permalink: /projects/
 layout: single
 ---
 
-<div style="margin-bottom: 2em;">
-  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Projects</h1>
-  <p style="color: #718096; margin: 0.5em 0 0 0;">Explore my projects and their results</p>
-</div>
-
-<!-- Tabs for navigating between projects -->
-<div class="tabs">
-  <button class="tab-link" onclick="showProject('project1')">Project 1</button>
-  <button class="tab-link" onclick="showProject('project2')">Project 2</button>
-  <button class="tab-link" onclick="showProject('project3')">Project 3</button>
-</div>
-
-<!-- Project content -->
-<div id="project1" class="tab-content">
-  <h2>Project 1: Machine Learning Model for Risk Assessment</h2>
-  <p>This project involved developing a machine learning model to assess financial risks...</p>
-  <img src="/assets/images/project1-visualization.png" alt="Project 1 Visualization" style="width: 100%; height: auto;">
-</div>
-
-<div id="project2" class="tab-content">
-  <h2>Project 2: Credit Scoring Optimization</h2>
-  <p>This project optimized credit scoring processes using predictive modeling...</p>
-  <img src="/assets/images/project2-visualization.png" alt="Project 2 Visualization" style="width: 100%; height: auto;">
-</div>
-
-<div id="project3" class="tab-content">
-  <h2>Project 3: Fraud Detection System</h2>
-  <p>This project implemented a fraud detection system using advanced analytics...</p>
-  <img src="/assets/images/project3-visualization.png" alt="Project 3 Visualization" style="width: 100%; height: auto;">
-</div>
-
 <style>
-/* Styling for tabs */
-.tabs {
+/* Tab navigation styles */
+.project-tabs {
   display: flex;
-  gap: 1em;
-  margin-bottom: 1em;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 2em;
+  gap: 2px;
 }
 
-.tab-link {
-  background-color: #667eea;
-  color: white;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 8px;
+.project-tab {
+  padding: 0.75em 1.75em;
   cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.1em;
   font-weight: 600;
+  color: #2d3748;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
 }
 
-.tab-link:hover {
-  background-color: #5a67d8;
+.project-tab.active {
+  border-bottom: 2.5px solid #4299e1;
+  color: #4299e1;
+  background: #f7fafc;
 }
 
-.tab-content {
+.project-content {
   display: none;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s;
+  padding-top: 1.5em;
 }
 
-.tab-content.active {
+.project-content.active {
   display: block;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 </style>
 
+<h1>Projects</h1>
+<p>Explore my open source work. Click on a tab to view details about each project.</p>
+
+<!-- Tab navigation -->
+<div class="project-tabs" id="projectTabs">
+  {% assign repos = site.github.public_repositories | where: "owner.login", "mpaulinv" %}
+  {% for repo in repos %}
+    <button class="project-tab{% if forloop.first %} active{% endif %}" data-tab="project{{ forloop.index }}">
+      {{ repo.name }}
+    </button>
+  {% endfor %}
+</div>
+
+<!-- Tab contents -->
+{% for repo in repos %}
+  <div class="project-content{% if forloop.first %} active{% endif %}" id="project{{ forloop.index }}">
+    <h2>
+      <a href="{{ repo.html_url }}" target="_blank" rel="noopener">
+        {{ repo.name }}
+      </a>
+    </h2>
+    <p>{{ repo.description | default: "No description provided." }}</p>
+    <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; color: #4a5568;">
+      <li>
+        <strong>Language:</strong> {{ repo.language | default: "N/A" }}
+        &nbsp;|&nbsp;
+        <strong>★</strong> {{ repo.stargazers_count }}
+        &nbsp;|&nbsp;
+        <strong>Last updated:</strong> {{ repo.updated_at | date: "%b %d, %Y" }}
+      </li>
+    </ul>
+    <a href="{{ repo.html_url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+{% endfor %}
+
 <script>
-/* JavaScript for tab switching */
-function showProject(projectId) {
-  // Hide all tabs
-  const tabs = document.querySelectorAll('.tab-content');
-  tabs.forEach(tab => tab.classList.remove('active'));
-
-  // Show selected tab
-  const selectedTab = document.getElementById(projectId);
-  selectedTab.classList.add('active');
-}
-
-// Show the first tab by default on page load
-document.addEventListener('DOMContentLoaded', () => {
-  showProject('project1');
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.project-tab');
+  const contents = document.querySelectorAll('.project-content');
+  tabs.forEach((tab, idx) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      contents[idx].classList.add('active');
+    });
+  });
 });
 </script>
