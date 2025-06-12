@@ -1,11 +1,11 @@
 ---
-title: "Portfolio"
-permalink: /portfolio/
+title: "Projects"
+permalink: /projects/
 layout: single
 ---
 
 <div style="margin-bottom: 2em;">
-  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Portfolio</h1>
+  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Projects</h1>
   <p style="color: #718096; margin: 0.5em 0 0 0;">Explore my projects and their results</p>
 </div>
 
