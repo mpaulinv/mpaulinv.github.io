@@ -6,9 +6,10 @@ layout: single
 
 {% assign projects_list = 
   [
-    {"repo": "awesome-ml-project", "tab": "Awesome ML Project"},
-    {"repo": "portfolio-website", "tab": "Portfolio Website"},
-    {"repo": "data-viz-tools", "tab": "Data Visualization Tools"}
+    {"repo": "elliptic-bitcoin-aml", "tab": "AML detection project"},
+    {"repo": "heart_disease", "tab": "Heart Disease prediction"},
+    {"repo": "lichess_dashboard", "tab": "Chess performance dashboard"},
+    {"repo": "roberta_qa", "tab": "Question Answering Task"}
   ]
 %}
 
