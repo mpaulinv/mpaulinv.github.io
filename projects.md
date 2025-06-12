@@ -6,10 +6,10 @@ layout: single
 
 {% assign projects_list = 
   [
-    {"repo": "elliptic-bitcoin-aml", "tab": "AML detection project"},
-    {"repo": "heart_disease", "tab": "Heart Disease prediction"},
+    {"repo": "elliptic-bitcoin-aml", "tab": "Cryptocurrency AML Detection"},
+    {"repo": "heart_disease", "tab": "Heart Disease Prediction"},
     {"repo": "lichess_dashboard", "tab": "Chess performance dashboard"},
-    {"repo": "roberta_qa", "tab": "Question Answering Task"}
+    {"repo": "roberta_qa", "tab": "Question Answering with RoBERTa"}
   ]
 %}
 
