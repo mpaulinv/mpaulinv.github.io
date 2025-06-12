@@ -1,0 +1,23 @@
+- repo: elliptic-bitcoin-aml
+  tab: Cryptocurrency AML Detection
+  url: https://github.com/mpaulinv/elliptic-bitcoin-aml
+  description: Repository for the cryptocurrency AML detection project
+  language: Python
+
+- repo: heart_disease
+  tab: Heart Disease Prediction
+  url: https://github.com/mpaulinv/heart_disease
+  description: Repository for the heart disease prediction project
+  language: Jupyter Notebook
+
+- repo: lichess_dashboard
+  tab: Chess Performance Dashboard
+  url: https://github.com/mpaulinv/lichess_dashboard
+  description: Lichess chess analysis and dashboard tools.
+  language: Python
+
+- repo: roberta_qa
+  tab: Question Answering with RoBERTa
+  url: https://github.com/mpaulinv/roberta_qa
+  description: Question answering system using the RoBERTa model.
+  language: Python
