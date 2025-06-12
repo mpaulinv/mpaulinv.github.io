@@ -4,15 +4,6 @@ permalink: /projects/
 layout: single
 ---
 
-{% assign projects_list = 
-  [
-    {"repo": "elliptic-bitcoin-aml", "tab": "Cryptocurrency AML Detection"},
-    {"repo": "heart_disease", "tab": "Heart Disease Prediction"},
-    {"repo": "lichess_dashboard", "tab": "Chess performance dashboard"},
-    {"repo": "roberta_qa", "tab": "Question Answering with RoBERTa"}
-  ]
-%}
-
 <style>
 .project-tabs {
   display: flex;
@@ -60,6 +51,38 @@ layout: single
   display: block;
 }
 
+.project-section-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.3em;
+  margin-top: 1.3em;
+}
+
+.project-images {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+.project-images img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(80,90,120,0.10);
+  border: 1px solid #e5e7eb;
+}
+@media (max-width: 600px) {
+  .project-images {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .project-images img {
+    max-width: 100%;
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -71,7 +94,7 @@ layout: single
 
 <!-- Tab navigation -->
 <div class="project-tabs" id="projectTabs">
-  {% for project in projects_list %}
+  {% for project in site.data.projects %}
     <button class="project-tab{% if forloop.first %} active{% endif %}" data-tab="project{{ forloop.index }}">
       {{ project.tab }}
     </button>
@@ -79,30 +102,49 @@ layout: single
 </div>
 
 <!-- Tab contents -->
-{% assign repos = site.github.public_repositories | where: "owner.login", "mpaulinv" %}
-{% for project in projects_list %}
-  {% assign repo = repos | where: "name", project.repo | first %}
+{% for project in site.data.projects %}
   <div class="project-content{% if forloop.first %} active{% endif %}" id="project{{ forloop.index }}">
-    {% if repo %}
-      <h2 style="font-weight:500; font-family:'Inter','Segoe UI','system-ui',sans-serif;">
-        <a href="{{ repo.html_url }}" target="_blank" rel="noopener" style="color:#2563eb;text-decoration:none;">
-          {{ project.tab }}
-        </a>
-      </h2>
-      <p>{{ repo.description | default: "No description provided." }}</p>
-      <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; color: #4b5563;">
-        <li>
-          <strong>Language:</strong> {{ repo.language | default: "N/A" }}
-          &nbsp;|&nbsp;
-          <strong>★</strong> {{ repo.stargazers_count }}
-          &nbsp;|&nbsp;
-          <strong>Last updated:</strong> {{ repo.updated_at | date: "%b %d, %Y" }}
-        </li>
-      </ul>
-      <a href="{{ repo.html_url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
-    {% else %}
-      <p>Repository not found: {{ project.repo }}</p>
+    <h2>
+      <a href="{{ project.url }}" target="_blank" rel="noopener" style="color:#2563eb;text-decoration:none;">
+        {{ project.tab }}
+      </a>
+    </h2>
+    <p style="font-style:italic; color:#64748b;">{{ project.description }}</p>
+
+    {% if project.why %}
+      <div class="project-section-title">Why it matters</div>
+      <p>{{ project.why }}</p>
     {% endif %}
+
+    {% if project.overview %}
+      <div class="project-section-title">Overview</div>
+      <p>{{ project.overview }}</p>
+    {% endif %}
+
+    {% if project.methods %}
+      <div class="project-section-title">Key Methods & Techniques</div>
+      <div style="white-space:pre-line;">{{ project.methods }}</div>
+    {% endif %}
+
+    {% if project.results %}
+      <div class="project-section-title">Results & Visuals</div>
+      <p>{{ project.results }}</p>
+    {% endif %}
+
+    {% if project.images %}
+      <div class="project-images">
+        {% for image in project.images %}
+          <img src="{{ image }}" alt="Project image: {{ project.tab }} {{ forloop.index }}">
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if project.impact %}
+      <div class="project-section-title">Lessons Learned / Impact</div>
+      <p>{{ project.impact }}</p>
+    {% endif %}
+
+    <a href="{{ project.url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
   </div>
 {% endfor %}
 
@@ -117,6 +159,9 @@ document.addEventListener('DOMContentLoaded', function() {
       tab.classList.add('active');
       contents[idx].classList.add('active');
     });
+  });
+});
+</script>
   });
 });
 </script>
