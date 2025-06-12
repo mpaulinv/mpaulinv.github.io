@@ -5,7 +5,7 @@ layout: single
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5em; flex-wrap: wrap; gap: 1em;">
-  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Mario Paulin Vega</h1>
+  <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Mario Pauin Vega</h1>
   <a href="/assets/files/mario-paulin-vega-cv.pdf" download style="background: #667eea; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2); transition: all 0.3s ease;">
     📥 Download PDF
   </a>
@@ -13,104 +13,72 @@ layout: single
 
 <div style="border-bottom: 2px solid #e2e8f0; margin-bottom: 2em; padding-bottom: 1em;">
   <h2 style="color: #4a5568; font-size: 1.1rem; font-weight: 400; margin: 0;">Data Science | Economics | Analytics & Machine Learning</h2>
-  <p style="color: #718096; margin: 0.5em 0 0 0;">📧 mpaulinv@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/mario-paulin-vega/)</p>
+  <p style="color: #718096; margin: 0.5em 0 0 0;">📧 mpaulinv@gmail.com | 🔗 <a href="https://www.linkedin.com/in/mario-paulin-vega/" style="color: #718096; text-decoration: none;">LinkedIn</a> | 💻 <a href="https://github.com/mpaulinv" style="color: #718096; text-decoration: none;">GitHub</a></p>
 </div>
-
-## Professional Experience
-
-**Data Science Manager** | *Financial Services Company* | *2020 - Present*
-- Lead cross-functional teams of 8+ data scientists and analysts in developing advanced analytics solutions
-- Manage $2M+ analytics budget and oversee strategic data science initiatives across the organization
-- Developed and implemented machine learning models for risk assessment, fraud detection, and customer segmentation
-- Collaborated with C-suite executives to translate business requirements into actionable data science projects
-- Established data governance frameworks and best practices for model validation and deployment
-
-**Senior Data Scientist** | *Financial Institution* | *2018 - 2020*
-- Built predictive models using Python, R, and SQL for credit risk assessment and portfolio optimization
-- Designed and implemented automated data pipelines processing 100M+ records daily
-- Led model validation processes ensuring compliance with regulatory requirements
-- Mentored junior data scientists and established coding standards and documentation practices
-- Collaborated with business stakeholders to deliver insights that drove $5M+ in cost savings
-
-**Data Scientist** | *Analytics Consulting Firm* | *2016 - 2018*
-- Developed statistical models and machine learning algorithms for diverse client portfolios
-- Performed advanced statistical analysis and hypothesis testing for business decision support
-- Created interactive dashboards and visualizations using Tableau and PowerBI
-- Conducted A/B testing and experimental design for product optimization initiatives
-
-**Research Analyst** | *Economic Research Institute* | *2014 - 2016*
-- Conducted econometric analysis and forecasting for macroeconomic indicators
-- Published research findings in peer-reviewed journals and presented at industry conferences
-- Developed economic models using SAS and R for policy impact assessment
-- Collaborated with academic institutions and government agencies on research projects
 
 ## Education
 
-**Master of Science in Economics** | *University Name* | *2014*
-- Concentration: Econometrics and Quantitative Analysis
-- Thesis: "Machine Learning Applications in Economic Forecasting"
-- GPA: 3.8/4.0
+**The University of Texas at Austin**  
+MSc in Data Science (Expected December 2024)  
+MSc in Economics  
 
-**Bachelor of Science in Economics** | *University Name* | *2012*
-- Magna Cum Laude
-- Minor in Mathematics and Statistics
-- Relevant Coursework: Advanced Statistics, Econometrics, Mathematical Economics
+**ITAM**  
+Master in Economic Theory  
+Bachelor in Economics, Finance Track, With Honors
 
-## Technical Skills
+## Professional Experience
 
-**Programming Languages**
-- Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch)
-- R (dplyr, ggplot2, caret, randomForest)
-- SQL (PostgreSQL, MySQL, SQL Server)
-- SAS (Base SAS, SAS/STAT, SAS Enterprise Miner)
+### Team Lead | CitiBanamex, Anti-Money Laundering Division | Mexico City, Mexico | 2020 – 2024
+- Led a team of 3 data scientists validating ~100 regulatory models across LATAM, US, and Canada, achieving zero audit findings.
+- Integrated validation insights into compliance workflows, improving data integrity and strategic decision-making.
+- Streamlined global processes through automation and developed methodologies for more efficient operations.
+- Mentored junior team members and led initiatives that improved control processes by 15%.
 
-**Machine Learning & Analytics**
-- Supervised Learning: Regression, Classification, Decision Trees, Random Forest, XGBoost
-- Unsupervised Learning: Clustering, PCA, Association Rules
-- Deep Learning: Neural Networks, CNN, RNN
-- Time Series Analysis and Forecasting
-- A/B Testing and Experimental Design
+### Sr. Statistician | CitiBanamex, AML Division | Mexico City, Mexico | 2017 – 2020
+- Validated predictive and rule-based models for compliance; maintained perfect audit performance.
+- Conducted code reviews, data extractions, replications, and model assessments across environments.
+- Applied advanced statistical methods, including logistic regression, decision trees, and clustering techniques.
+- Automated data stability monitoring, cutting analyst time by 50%.
 
-**Data Visualization & BI Tools**
-- Tableau, PowerBI, Looker
-- Matplotlib, Seaborn, ggplot2
-- D3.js, Plotly
+### Independent Consultant | Queretaro, Mexico | 2016 – 2017
+- Built automated analysis tools and econometric models to assess labor market transitions in Colombia.
 
-**Cloud & Big Data Technologies**
-- AWS (S3, EC2, Redshift, SageMaker)
-- Apache Spark, Hadoop
-- Docker, Kubernetes
-- Git, GitHub, GitLab
+### Academic Research and Teaching | UT Austin & CIE, Mexico City | 2011 – 2016
+- Delivered 100+ hours of instruction at undergraduate and graduate levels.
+- Conducted firm-level panel data research on export dynamics using econometric modeling.
 
-**Databases & Data Management**
-- PostgreSQL, MySQL, MongoDB
-- Data Warehousing and ETL processes
-- Data Modeling and Architecture
+### Impact Evaluation Analyst | CONEVAL | Mexico City, Mexico | 2009 – 2010
+- Evaluated public programs using DiD, RDD, matching, and panel methods.
+- Estimated treatment effects and led satisfaction assessments.
 
-## Certifications & Professional Development
+## Skills
 
-- **AWS Certified Machine Learning - Specialty** | *2023*
-- **Certified Analytics Professional (CAP)** | *2022*
-- **Tableau Desktop Certified Professional** | *2021*
-- **SAS Certified Advanced Programmer** | *2020*
+- **Programming**: Python (Pandas, NumPy, Scikit-learn, PyTorch), R, SAS, Stata  
+- **Big Data & Cloud**: SQL, Hive, Spark, Hadoop, GCP  
+- **Visualization**: ggplot2, Matplotlib, Seaborn, Power BI  
+- **Machine Learning**: Regression, Clustering, Decision Trees, Random Forest, Neural Networks  
+- **Statistics & Econometrics**: Hypothesis Testing, Causal Inference, Panel Data Methods
 
-## Publications & Presentations
+## Certifications and Courses
 
-- "Advanced Risk Modeling in Financial Services" | *Journal of Financial Analytics* | *2023*
-- "Machine Learning Applications in Credit Scoring" | *Data Science Conference* | *2022*
-- "Economic Forecasting with Deep Learning" | *International Economics Symposium* | *2021*
+- Harnessing Language Models: Your Path to NLP Expert (2024)  
+- Certified Anti-Money Laundering Specialist – ACAMS (2021)
 
-## Professional Affiliations
+## Projects
 
-- Member, **American Statistical Association (ASA)**
-- Member, **International Association for Statistical Computing (IASC)**
-- Member, **Data Science Professional Society**
+- **[Cryptocurrency AML Detection (2025)](https://github.com/mpaulinv/elliptic-bitcoin-aml)**  
+  Applied GNNs to the Elliptic dataset to classify Bitcoin transactions for financial crime detection.
+
+- **[Clinical Risk Prediction (2025)](https://github.com/mpaulinv/heart_disease)**  
+  Built ensemble models to predict cardiovascular risk from clinical indicators with a focus on model interpretability.
+
+- **[Chess Analytics Platform (2025)](https://github.com/mpaulinv/lichess_dashboard)**  
+  Designed an end-to-end dashboard using the Lichess API to analyze game performance and player stats.
 
 ## Languages
 
-- **English**: Native
-- **Spanish**: Fluent
-- **Portuguese**: Conversational
+- Spanish (Native)  
+- English (Fluent)
 
 <style>
 /* Professional styling for CV */
