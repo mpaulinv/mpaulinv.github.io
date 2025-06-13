@@ -59,6 +59,20 @@ layout: single
   margin-top: 1.3em;
 }
 
+.project-meta {
+  font-size: 0.97em;
+  color: #6b7280;
+  margin-bottom: 1em;
+  font-family: 'Inter', 'Segoe UI', 'system-ui', sans-serif;
+}
+
+.project-tech {
+  font-size: 0.97em;
+  color: #374151;
+  margin-bottom: 1em;
+  font-family: 'Inter', 'Segoe UI', 'system-ui', sans-serif;
+}
+
 .project-images {
   display: flex;
   gap: 1.5em;
@@ -109,11 +123,14 @@ layout: single
         {{ project.tab }}
       </a>
     </h2>
+    <p class="project-meta">
+      {% if project.date %}<strong>Date:</strong> {{ project.date }}{% endif %}
+    </p>
     <p style="font-style:italic; color:#64748b;">{{ project.description }}</p>
 
-    {% if project.why %}
-      <div class="project-section-title">Why it matters</div>
-      <p>{{ project.why }}</p>
+    {% if project.objective %}
+      <div class="project-section-title">Objective</div>
+      <p>{{ project.objective }}</p>
     {% endif %}
 
     {% if project.overview %}
@@ -121,13 +138,17 @@ layout: single
       <p>{{ project.overview }}</p>
     {% endif %}
 
+    {% if project.tech_stack %}
+      <div class="project-tech"><strong>Tech Stack:</strong> {{ project.tech_stack | join: ', ' }}</div>
+    {% endif %}
+
     {% if project.methods %}
-      <div class="project-section-title">Key Methods & Techniques</div>
+      <div class="project-section-title">Key Methods & Challenges</div>
       <div style="white-space:pre-line;">{{ project.methods }}</div>
     {% endif %}
 
     {% if project.results %}
-      <div class="project-section-title">Results & Visuals</div>
+      <div class="project-section-title">Results</div>
       <p>{{ project.results }}</p>
     {% endif %}
 
@@ -140,7 +161,7 @@ layout: single
     {% endif %}
 
     {% if project.impact %}
-      <div class="project-section-title">Lessons Learned / Impact</div>
+      <div class="project-section-title">Impact / Lessons Learned</div>
       <p>{{ project.impact }}</p>
     {% endif %}
 
@@ -159,9 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
       tab.classList.add('active');
       contents[idx].classList.add('active');
     });
-  });
-});
-</script>
   });
 });
 </script>
