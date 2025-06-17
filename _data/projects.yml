@@ -1,26 +1,27 @@
-- repo: elliptic-bitcoin-aml
-  tab: Cryptocurrency AML Detection
-  url: https://github.com/mpaulinv/elliptic-bitcoin-aml
-  description: >
-    Built a robust analytics system to detect illicit Bitcoin transactions at scale by combining graph-based features, machine learning, and graph neural networks. Tackled noisy, imbalanced blockchain data and regulatory constraints to deliver actionable compliance insights.
-  objective: >
-    Develop a real-world anti-money laundering (AML) solution for cryptocurrency, accurately flagging suspicious activity to support compliance and fraud prevention in blockchain environments.
-  overview: >
-    Leveraged the Elliptic dataset to engineer sophisticated graph features (centrality, clustering), perform exploratory data analysis, and train models including Random Forests and Graph Attention Networks (GAT). Designed custom data splits to mimic real-world regulatory use, and visualized transaction networks and model predictions.
-  tech_stack: [Python, NetworkX, scikit-learn, PyTorch, matplotlib]
-  methods: |
-    - Engineered advanced graph features (betweenness, eigenvector centrality) from blockchain transaction graphs.
-    - Built and evaluated Random Forest and GAT models for node classification of illicit activity.
-    - Addressed data drift and label noise by designing robust splits and feature selection pipelines.
-    - Created custom visualizations: scatterplots, heatmaps, and side-by-side network diagrams across time.
-  results: >
-    Random Forest with engineered features outperformed deep learning models on test data, achieving strong illicit activity detection. Visualizations provided key compliance insights and supported model trust.
-  impact: >
-    Delivered tools supporting AML compliance teams, and developed expertise in handling adversarial, high-noise financial data and regulatory ML scenarios.
-  date: 2024-03
-  images:
-    - /assets/images/elliptic-scatterplot.png
-    - /assets/images/elliptic-graph-visualization.png
+repo: elliptic-bitcoin-aml
+tab: Cryptocurrency AML Detection
+url: https://github.com/mpaulinv/elliptic-bitcoin-aml
+description: >
+  Built a robust analytics system to detect illicit Bitcoin transactions at scale, combining graph-based machine learning with advanced neural networks to tackle the challenge of financial crime in cryptocurrency. Successfully handled severely imbalanced data (rare illicit transactions), adversarial blockchain environments, and strict regulatory compliance requirements. Delivered a system that outperformed complex deep learning approaches through strategic feature engineering, demonstrating that domain expertise often trumps model complexity in financial applications.
+objective: >
+  Develop a comprehensive anti-money laundering (AML) solution that addresses the unique challenges of cryptocurrency compliance: detecting rare illicit transactions in massive, noisy blockchain networks while meeting regulatory requirements for explainability and temporal validation. Create a system that supports real-world compliance workflows and can adapt to evolving criminal patterns in adversarial financial environments.
+overview: >
+  Engineered a comprehensive AML detection pipeline using the Elliptic dataset, implementing advanced graph feature extraction that captures the complex relationships in blockchain transaction networks. Developed competing approaches: Random Forest with engineered features vs. Graph Attention Networks (GAT), discovering that sophisticated feature engineering often outperforms deep learning in financial domains. Designed temporal data splits that mirror real-world regulatory scenarios where models must predict future criminal activity based on historical patterns. Created rich visualizations revealing the distinct signatures of illicit transactions: high network density with low clustering coefficients, providing actionable insights for compliance teams.
+tech_stack: [Python, NetworkX, scikit-learn, PyTorch, matplotlib, pandas, seaborn]
+methods: |
+  - Engineered 15+ sophisticated graph features (betweenness centrality, eigenvector centrality, clustering coefficients, ego network properties) to capture illicit transaction signatures in complex blockchain networks.
+  - Built competing model architectures: hyperparameter-tuned Random Forest vs. Graph Attention Network (GAT), systematically evaluating traditional ML against deep learning approaches for financial crime detection.
+  - Implemented regulatory-compliant temporal validation: training on historical data (timesteps 1-34), testing on future transactions to simulate real-world deployment where criminals adapt their strategies.
+  - Critical data challenges: severe class imbalance (rare illicit transactions), high feature correlation, label noise, and data drift around regulatory changes at timestep 43.
+  - Developed comprehensive analysis framework: correlation heatmaps identifying feature redundancy, temporal network visualizations showing criminal pattern evolution, and side-by-side prediction comparisons enabling model trust and debugging.
+results: >
+  Discovered that Random Forest with engineered graph features significantly outperformed Graph Attention Networks on test data, revealing a key insight for financial ML: domain-specific feature engineering often beats deep learning complexity in adversarial environments. Identified distinct illicit transaction patterns: criminals create high-density networks with low clustering coefficients, enabling targeted detection strategies. Visualizations uncovered temporal patterns in criminal behavior and provided interpretable evidence for compliance reporting. The system achieved robust performance on severely imbalanced data while maintaining explainability required for regulatory environments.
+impact: >
+  Delivered production-ready tools that solve real compliance challenges: handling adversarial data where criminals actively try to evade detection, working with severely imbalanced datasets where illicit transactions are rare, and meeting regulatory requirements for model explainability and temporal validation. Developed deep expertise in financial crime ML including data drift analysis, feature selection under multicollinearity, and building trust in AI systems for high-stakes regulatory decisions. Demonstrated that sophisticated feature engineering can outperform complex neural networks in specialized financial domains, providing a template for practical AML implementations.
+date: 2025-05
+images:
+  - /assets/images/elliptic-scatterplot.png
+  - /assets/images/elliptic-graph-visualization.png
 
 - repo: heart_disease
   tab: Heart Disease Prediction
