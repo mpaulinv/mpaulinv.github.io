@@ -16,78 +16,64 @@ layout: single
   <p style="color: #718096; margin: 0.5em 0 0 0;">📧 mpaulinv@gmail.com | 🔗 <a href="https://www.linkedin.com/in/mario-paulin-vega/" style="color: #718096; text-decoration: none;">LinkedIn</a> | 💻 <a href="https://github.com/mpaulinv" style="color: #718096; text-decoration: none;">GitHub</a></p>
 </div>
 
-<div style="border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; margin-bottom: 2em;">
-  <iframe
-    src="/assets/files/cv_mapv_0625_ats.pdf#toolbar=0"
-    width="100%"
-    height="900px"
-    style="border:0; min-height:70vh;"
-    title="Curriculum Vitae PDF"
-    loading="lazy"
-  >
-    <p>Your browser does not support embedded PDFs. 
-      <a href="/assets/files/cv_mapv_0625_ats.pdf" target="_blank">Download here.</a>
-    </p>
-  </iframe>
-</div>
-
 ## Education
 
 **The University of Texas at Austin**  
-MSc in Data Science, December 2024  
-MSc in Economics  
+MSc in Data Science, Dec 2024  
+MSc in Economics
 
-**ITAM**  
+**ITAM, Mexico City**  
 Master in Economic Theory  
 Bachelor in Economics, Finance Track, With Honors
 
 ## Professional Experience
 
-### Team Lead | CitiBanamex, Anti-Money Laundering Division | Mexico City, Mexico | 2020 – 2024
-- Led a team of 3 data scientists validating around 100 regulatory models across LATAM, US, and Canada, achieving zero audit findings.
-- Integrated validation insights into compliance workflows, improving data integrity and strategic decision-making.
-- Streamlined global processes through automation and developed methodologies for more efficient operations.
-- Mentored junior team members and led initiatives that improved control processes by 15%.
+### Team Lead, Model Risk & Validation | CitiBanamex, Mexico City | 2020–2024
+- Led a team of 3 data scientists validating 100+ regulatory and business models (AML, fraud, risk) across LATAM, US, and Canada; achieved zero audit findings.
+- Automated model validation workflows, improving turnaround and reducing errors.
+- Integrated validation findings into strategic compliance processes, improving data integrity and regulatory alignment.
+- Mentored junior team members and led initiatives that enhanced control processes by 15%.
 
-### Sr. Statistician | CitiBanamex, AML Division | Mexico City, Mexico | 2017 – 2020
-- Validated predictive and rule-based models for compliance; maintained perfect audit performance.
+### Senior Statistician | CitiBanamex, Mexico City | 2017–2020
+- Validated predictive and rule-based models for compliance, maintaining perfect audit performance.
 - Conducted code reviews, data extractions, replications, and model assessments across environments.
-- Applied advanced statistical methods, including logistic regression, decision trees, and clustering techniques.
-- Automated data stability monitoring, cutting analyst time by 50%.
+- Applied advanced statistical methods, including logistic regression, decision trees, and clustering.
+- Automated data stability monitoring, reducing analyst time by 50%.
 
-### Independent Consultant | Queretaro, Mexico | 2016 – 2017
-- Built automated analysis tools and econometric models to assess labor market transitions in Colombia.
+### Independent Consultant | Queretaro, Mexico | 2016–2017
+- Built automated analysis tools and econometric models to assess labor market transitions for a research institution in Colombia.
 
-### Academic Research and Teaching | UT Austin & CIE, Mexico City | 2011 – 2016
+### Academic Research and Teaching | UT Austin & CIE, Mexico City | 2011–2016
 - Delivered 100+ hours of instruction at undergraduate and graduate levels.
 - Conducted firm-level panel data research on export dynamics using econometric modeling.
 
-### Impact Evaluation Analyst | CONEVAL | Mexico City, Mexico | 2009 – 2010
+### Impact Evaluation Analyst | CONEVAL | Mexico City | 2009–2010
 - Evaluated public programs using DiD, RDD, matching, and panel methods.
 - Estimated treatment effects and led satisfaction assessments.
 
 ## Skills
 
-- **Programming**: Python (Pandas, NumPy, Scikit-learn, PyTorch), R, SAS, Stata  
-- **Big Data & Cloud**: SQL, Hive, Spark, Hadoop, Google Cloud Platform   
-- **Visualization**: Matplotlib, Seaborn, Power BI, ggplot2  
-- **Machine Learning**: Regression, Clustering, Decision Trees, Random Forest, Neural Networks  
-- **Statistics & Econometrics**: Hypothesis Testing, Causal Inference, Panel Data Methods
+- **Programming:** Python (Pandas, NumPy, Scikit-learn, PyTorch), R, SAS, Stata  
+- **Big Data & Cloud:** SQL, Hive, Spark, Hadoop, Google Cloud Platform  
+- **Visualization:** Matplotlib, Seaborn, Power BI, ggplot2  
+- **Machine Learning:** Regression, Clustering, Decision Trees, Random Forest, Neural Networks  
+- **Statistics & Econometrics:** Hypothesis Testing, Causal Inference, Panel Data Methods
 
-## Certifications and Courses
+## Certifications & Professional Development
 
-- Harnessing Language Models: Your Path to NLP Expert - Barcelona School of Economics one week onsite workshop (2024)  
-- Certified Anti-Money Laundering Specialist – ACAMS (2021)
+- Harnessing Language Models: Your Path to NLP Expert — Barcelona School of Economics (2024)
+- Certified Anti-Money Laundering Specialist (ACAMS, 2021)
 
-## Volunteering Activities
-### Data Quality Analyst | Statistics Without Borders | 2025 
+## Volunteering
+
+### Data Quality Analyst | Statistics Without Borders | 2025
 - Supported the development of a white paper on the application of AI within NGOs.
-- Participated in a project focused on leveraging NLP and automation to address bottlenecks in sustainability reporting, with an emphasis on improving efficiency and data transparency.
+- Participated in a project focused on leveraging NLP and automation to address bottlenecks in sustainability reporting, improving efficiency and data transparency.
 
 ## Languages
 
 - Spanish (Native)  
-- English (Fluent)
+- English (Fluent)  
 - Italian (Elementary)
 
 <style>
