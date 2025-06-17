@@ -66,7 +66,7 @@ images:
     Developed a workable website that can extract and process data in real-time and provide insights into a production environment.
   impact: >
     Developed skills in data processing and presentation. 
-  date: 2023-11
+  date: 2025-05
   images:
     - /assets/images/lichess-dashboard-overview.png
     - /assets/images/lichess-opening-performance.png
@@ -90,7 +90,7 @@ images:
     Identified key sources of performance gaps and modestly improved adversarial robustness with fine-tuning and augmentation. Provided recommendations for future model and dataset design.
   impact: >
     Advanced understanding of NLP model limitations; contributed insights for building more trustworthy, explainable AI systems.
-  date: 2024-04
+  date: 2024-11
   images:
     - /assets/images/roberta-qa-results.png
     - /assets/images/roberta-error-analysis.png
