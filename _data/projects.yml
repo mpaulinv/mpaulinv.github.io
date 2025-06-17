@@ -1,4 +1,4 @@
-repo: elliptic-bitcoin-aml
+- repo: elliptic-bitcoin-aml
 tab: Cryptocurrency AML Detection
 url: https://github.com/mpaulinv/elliptic-bitcoin-aml
 description: >
