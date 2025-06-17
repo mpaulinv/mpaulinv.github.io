@@ -4,221 +4,223 @@ permalink: /projects/
 layout: single
 ---
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap">
-
+<!-- Load modern font for improved typography -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap">
 <style>
 :root {
-  --accent: #1184b1;
-  --accent-light: #f0fbff;
-  --neutral: #23272f;
-  --neutral-light: #f8fafc;
-  --muted: #6b7280;
-  --section-title: #1184b1;
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --bg: #f8fafc;
+  --card-bg: #fff;
+  --border: #e5e7eb;
+  --text-main: #23272f;
+  --text-muted: #6b7280;
+  --badge-bg: #e0e7ef;
+  --badge-text: #2563eb;
+  --shadow: 0 4px 24px rgba(80,90,120,0.08);
 }
 
-body, .project-content, .project-tab, .project-section-title, .project-meta, .project-tech {
+/* Layout */
+body, .page__content {
   font-family: 'Inter', 'Segoe UI', 'system-ui', sans-serif;
-  color: var(--neutral);
-  line-height: 1.7;
+  background: var(--bg) !important;
+  color: var(--text-main);
 }
-
-.project-tabs {
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  gap: 2.2rem;
+  margin: 2rem 0 3rem 0;
+  padding: 0;
+}
+.project-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
   display: flex;
-  border-bottom: 2px solid #e5e7eb;
-  margin-bottom: 2em;
-  gap: 0.5em;
-  background: var(--neutral-light);
-  padding-left: 0.5em;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.18s, transform 0.15s;
+  min-width: 0;
+}
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 28px rgba(40,60,140,0.13);
 }
 
-.project-tab {
-  padding: 0.7em 1.3em;
-  cursor: pointer;
-  background: #f5f6fa;
-  border: none;
-  font-size: 1.08em;
-  font-weight: 500;
-  color: var(--muted);
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s;
-  border-radius: 10px 10px 0 0;
-  outline: none;
-  letter-spacing: 0.01em;
-}
-
-.project-tab.active {
-  color: var(--accent);
-  background: #fff;
-  border-bottom: 2.5px solid var(--accent);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  position: relative;
-  z-index: 2;
-}
-
-.project-tab:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #b8e5f5;
-  background: var(--accent-light);
-}
-
-.project-content {
-  display: none;
-  max-width: 750px;
-  margin: 0 auto 2.5em auto;
-  padding: 2.2em 1.5em 2.5em 1.5em;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(80,90,120,0.07);
-  word-break: break-word;
-  overflow-wrap: anywhere;
-  font-size: 1.06em;
-}
-
-.project-content.active {
-  display: block;
-}
-
-.project-section-title {
-  font-size: 1.12em;
-  font-weight: 600;
-  color: var(--section-title);
-  margin-bottom: 0.35em;
-  margin-top: 1.25em;
-  letter-spacing: 0.01em;
-}
-
-.project-meta, .project-tech {
-  font-size: 0.98em;
-  color: var(--muted);
-  margin-bottom: 1em;
-}
-
-.project-images {
-  display: flex;
-  gap: 1.2em;
-  flex-wrap: wrap;
-  margin-bottom: 1.5em;
-  margin-top: 1em;
-}
-.project-images img {
-  max-width: 340px;
+/* Visual elements */
+.project-image {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(80,90,120,0.10);
-  border: 1px solid #e5e7eb;
+  height: 180px;
+  object-fit: cover;
+  background: #e5e7eb;
+  border-bottom: 1px solid var(--border);
+  transition: filter 0.18s;
+}
+.project-card:hover .project-image {
+  filter: brightness(0.96) saturate(1.15);
+}
+.project-content {
+  padding: 1.3rem 1.3rem 1.8rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.45em 0;
+  color: var(--primary-dark);
+  letter-spacing: -0.5px;
+}
+.project-summary {
+  font-size: 1.08em;
+  color: var(--text-main);
+  margin-bottom: 0.65em;
+}
+.project-description {
+  font-size: 1em;
+  color: var(--text-muted);
+  margin-bottom: 1.1em;
+  line-height: 1.6;
+}
+/* Badges & tags */
+.project-tags {
+  margin: 0.7em 0 1.2em 0;
+}
+.tag {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 0.95em;
+  border-radius: 7px;
+  padding: 0.22em 0.88em;
+  margin: 0 0.37em 0.37em 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+/* Achievements */
+.project-achievements {
+  margin: 0.7em 0 1em 0;
+  padding-left: 1.2em;
+}
+.project-achievements li {
+  font-size: 0.99em;
+  color: var(--text-main);
+  margin-bottom: 0.5em;
+  line-height: 1.5;
 }
 
-a, a:visited {
-  color: var(--accent);
-  text-decoration: underline;
-  transition: color .15s;
+/* Links and buttons */
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
 }
-a:hover {
-  color: #0d6d98;
-  text-decoration: underline;
-}
-
 a.btn {
-  background: linear-gradient(90deg, #1184b1 0%, #4dd0e1 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, #4dd0e1 100%);
   color: #fff !important;
-  padding: 0.48em 1.18em;
+  padding: 0.45em 1.2em;
   border: none;
   border-radius: 7px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1em;
-  margin-top: 1.1em;
+  transition: background 0.15s, box-shadow 0.13s;
+  box-shadow: 0 2px 8px rgba(80,90,120,0.10);
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(80,90,120,0.1);
-  transition: background 0.15s;
 }
 a.btn:hover {
-  background: linear-gradient(90deg, #0d6d98 0%, #00bcd4 100%);
+  background: linear-gradient(90deg, var(--primary-dark) 0%, #00bcd4 100%);
+  box-shadow: 0 4px 18px rgba(40,60,140,0.13);
+}
+a.btn-secondary {
+  background: #e0e7ef;
+  color: var(--primary) !important;
+}
+a.btn-secondary:hover {
+  background: #c7d2fe;
+  color: #1e40af !important;
 }
 
-@media (max-width: 900px) {
-  .project-content {
-    padding: 1.3em 0.4em 2em 0.4em;
-  }
-  .project-images {
-    flex-direction: column;
-    gap: 1em;
-  }
-  .project-images img {
-    max-width: 100%;
-  }
+/* Headings and text hierarchy */
+.projects-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 0.1em 0 0.25em 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--primary-dark);
+}
+.projects-intro {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.13em;
+  margin-bottom: 2.5em;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .project-content { padding: 0.95em 0.5em 1.3em 0.5em; }
+  .projects-title { font-size: 1.7rem; }
+  .projects-intro { font-size: 1em; }
 }
 </style>
 
-<h1 style="font-family:'Inter','Segoe UI','system-ui',sans-serif; font-weight:600; letter-spacing:0.01em; color: #23272f;">Projects</h1>
-<p style="font-family:'Inter','Segoe UI','system-ui',sans-serif;">Explore my open source work. Click a tab to view details about each project.</p>
+<h1 class="projects-title">Projects</h1>
+<p class="projects-intro">
+  A selection of my technical projects, featuring hands-on machine learning, analytics, and automation.<br>
+  <span style="color: #2563eb; font-weight:500;">Click a card</span> to view more, or use the GitHub/demo links for code and live results.
+</p>
 
-<!-- Tab navigation -->
-<div class="project-tabs" id="projectTabs">
+<div class="projects-grid">
   {% for project in site.data.projects %}
-    <button class="project-tab{% if forloop.first %} active{% endif %}" data-tab="project{{ forloop.index }}">
-      {{ project.tab }}
-    </button>
+  <div class="project-card">
+    <!-- Project Image -->
+    {% if project.images and project.images[0] %}
+      <img src="{{ project.images[0] }}" class="project-image" alt="Screenshot for {{ project.tab }}">
+    {% else %}
+      <!-- Placeholder image if none provided -->
+      <img src="/assets/images/placeholder.png" class="project-image" alt="Project placeholder">
+    {% endif %}
+
+    <div class="project-content">
+      <!-- Title and quick summary -->
+      <div class="project-title">{{ project.tab }}</div>
+      <div class="project-summary">{{ project.summary | default: project.description | truncatewords: 24 }}</div>
+      <!-- Badges/tech tags -->
+      {% if project.tech_stack %}
+        <div class="project-tags">
+        {% for tech in project.tech_stack %}
+          <span class="tag">{{ tech }}</span>
+        {% endfor %}
+        </div>
+      {% endif %}
+      <!-- Key achievements (optional, add to your YAML) -->
+      {% if project.achievements %}
+        <ul class="project-achievements">
+        {% for item in project.achievements %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+      <!-- Description (hidden on card, show on click/modal for next-level UX) -->
+      <div class="project-description">{{ project.description }}</div>
+      <!-- Project links -->
+      <div class="project-links">
+        {% if project.url %}
+        <a href="{{ project.url }}" class="btn" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+        {% if project.demo %}
+        <a href="{{ project.demo }}" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
   {% endfor %}
 </div>
-
-<!-- Tab contents -->
-{% for project in site.data.projects %}
-  <div class="project-content{% if forloop.first %} active{% endif %}" id="project{{ forloop.index }}">
-    <h2 style="margin-top:0; margin-bottom:0.7em; font-size:1.5em; font-weight:600;">
-      <a href="{{ project.url }}" target="_blank" rel="noopener">
-        {{ project.tab }}
-      </a>
-    </h2>
-    <p class="project-meta">
-      {% if project.date %}<strong>Date:</strong> {{ project.date }}{% endif %}
-    </p>
-    <p style="font-style:italic; color: #495670; margin-bottom: 1.3em;">{{ project.description }}</p>
-    {% if project.objective %}
-      <div class="project-section-title">Objective</div>
-      <p>{{ project.objective }}</p>
-    {% endif %}
-    {% if project.overview %}
-      <div class="project-section-title">Overview</div>
-      <p>{{ project.overview }}</p>
-    {% endif %}
-    {% if project.tech_stack %}
-      <div class="project-tech"><strong>Tech Stack:</strong> {{ project.tech_stack | join: ', ' }}</div>
-    {% endif %}
-    {% if project.methods %}
-      <div class="project-section-title">Key Methods & Challenges</div>
-      <div style="white-space:pre-line;">{{ project.methods }}</div>
-    {% endif %}
-    {% if project.results %}
-      <div class="project-section-title">Results</div>
-      <p>{{ project.results }}</p>
-    {% endif %}
-    {% if project.images %}
-      <div class="project-images">
-        {% for image in project.images %}
-          <img src="{{ image }}" alt="Project image: {{ project.tab }} {{ forloop.index }}">
-        {% endfor %}
-      </div>
-    {% endif %}
-    {% if project.impact %}
-      <div class="project-section-title">Impact / Lessons Learned</div>
-      <p>{{ project.impact }}</p>
-    {% endif %}
-    <a href="{{ project.url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
-  </div>
-{% endfor %}
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const tabs = document.querySelectorAll('.project-tab');
-  const contents = document.querySelectorAll('.project-content');
-  tabs.forEach((tab, idx) => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      contents.forEach(c => c.classList.remove('active'));
-      tab.classList.add('active');
-      contents[idx].classList.add('active');
-    });
-  });
-});
-</script>
