@@ -43,7 +43,7 @@
   date: 2025-04
   images:
     - /assets/images/importance.png
-    - /assets/images/roc_heart.png
+    - /assets/images/roc.png
 - repo: lichess_dashboard
   tab: Chess Performance Dashboard
   url: https://github.com/mpaulinv/lichess_dashboard
