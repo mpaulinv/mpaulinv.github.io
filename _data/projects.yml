@@ -1,17 +1,22 @@
 - repo: elliptic-bitcoin-aml
   tab: Cryptocurrency AML Detection
   url: https://github.com/mpaulinv/elliptic-bitcoin-aml
-  description: Developed a robust system to detect illicit Bitcoin transactions at scale, leveraging advanced graph analytics and machine learning. Tackled challenges in dynamic, noisy data and regulatory uncertainty.
-  objective: Build a solution to accurately flag suspicious cryptocurrency activity and support anti-money laundering (AML) compliance in real-world blockchain environments.
-  overview: Used the Elliptic dataset to engineer graph-based features, train predictive models, and visualize illicit transaction patterns across time for compliance and research use.
+  description: >
+    Built a robust analytics system to detect illicit Bitcoin transactions at scale by combining graph-based features, machine learning, and graph neural networks. Tackled noisy, imbalanced blockchain data and regulatory constraints to deliver actionable compliance insights.
+  objective: >
+    Develop a real-world anti-money laundering (AML) solution for cryptocurrency, accurately flagging suspicious activity to support compliance and fraud prevention in blockchain environments.
+  overview: >
+    Leveraged the Elliptic dataset to engineer sophisticated graph features (centrality, clustering), perform exploratory data analysis, and train models including Random Forests and Graph Attention Networks (GAT). Designed custom data splits to mimic real-world regulatory use, and visualized transaction networks and model predictions.
   tech_stack: [Python, NetworkX, scikit-learn, PyTorch, matplotlib]
   methods: |
-    - Engineered centrality and clustering features from blockchain transaction graphs.
-    - Implemented Random Forest and Graph Attention Network (GAT) models for node classification.
-    - Addressed temporal data drift and noisy labels by designing robust validation splits and feature selection pipelines.
-    - Visualized evolving illicit activity using custom network diagrams and ROC analysis.
-  results: Achieved a significant improvement in illicit activity detection (e.g., ROC AUC up to XX%). Outperformed deep learning baselines with explainable graph features.
-  impact: Provided actionable tools for compliance teams; learned to handle rapidly evolving, adversarial data and regulatory challenges.
+    - Engineered advanced graph features (betweenness, eigenvector centrality) from blockchain transaction graphs.
+    - Built and evaluated Random Forest and GAT models for node classification of illicit activity.
+    - Addressed data drift and label noise by designing robust splits and feature selection pipelines.
+    - Created custom visualizations: scatterplots, heatmaps, and side-by-side network diagrams across time.
+  results: >
+    Random Forest with engineered features outperformed deep learning models on test data, achieving strong illicit activity detection. Visualizations provided key compliance insights and supported model trust.
+  impact: >
+    Delivered tools supporting AML compliance teams, and developed expertise in handling adversarial, high-noise financial data and regulatory ML scenarios.
   date: 2024-03
   images:
     - /assets/images/elliptic-scatterplot.png
@@ -20,17 +25,22 @@
 - repo: heart_disease
   tab: Heart Disease Prediction
   url: https://github.com/mpaulinv/heart_disease
-  description: Built an end-to-end ML pipeline for heart disease risk, focusing on feature interpretability and clinical relevance. Faced real-world data quality issues and model deployment constraints.
-  objective: Enable early and explainable prediction of heart disease to support preventative healthcare and empower both clinicians and patients with actionable insights.
-  overview: Analyzed the Cleveland dataset, engineered predictive features, and produced interactive risk visualizations for clinicians, with a focus on transparency and usability.
+  description: >
+    Developed a complete end-to-end ML pipeline for predicting heart disease risk using the Cleveland dataset. Emphasized model interpretability, feature engineering, and actionable healthcare insights in the presence of real-world data challenges.
+  objective: >
+    Enable explainable, early prediction of heart disease to empower clinicians and patients with evidence-based risk assessments and feature insights.
+  overview: >
+    Explored and visualized the Cleveland Heart Disease dataset, engineered predictive features and interaction terms, and built interpretable models (logistic regression, Random Forest). Delivered reports on key risk factors and model performance using clinical metrics.
   tech_stack: [Python, pandas, scikit-learn, matplotlib, seaborn]
   methods: |
-    - Cleaned and imputed missing clinical data, engineered interaction terms.
-    - Trained and evaluated logistic regression and Random Forest models, optimizing for both accuracy and interpretability.
-    - Addressed class imbalance and overfitting through cross-validation and custom metrics.
-    - Visualized risk factors and model outputs for non-technical users.
-  results: Models achieved strong accuracy (XX% AUC); key features such as age and cholesterol identified and explained for clinical use.
-  impact: Empowered clinicians with interpretable risk tools; gained experience in model transparency and stakeholder communication.
+    - Performed detailed EDA and feature engineering, including interaction terms and dummy variables.
+    - Trained and tuned logistic regression and Random Forest models.
+    - Evaluated with clinical metrics: accuracy, precision, recall, F1, AUC.
+    - Interpreted coefficients and feature importance for actionable insights.
+  results: >
+    Achieved robust predictive accuracy; identified and explained the main clinical risk factors for heart disease. Produced transparent reports for non-technical stakeholders.
+  impact: >
+    Provided clinicians and patients with interpretable, data-driven risk tools. Developed skills in model interpretability and stakeholder communication.
   date: 2024-01
   images:
     - /assets/images/heart-feature-importance.png
@@ -39,17 +49,22 @@
 - repo: lichess_dashboard
   tab: Chess Performance Dashboard
   url: https://github.com/mpaulinv/lichess_dashboard
-  description: Created an interactive dashboard for chess players to analyze and improve their performance using real-time data from Lichess. Overcame API and data normalization challenges.
-  objective: Deliver actionable insights for chess players to identify strengths, weaknesses, and track progress over time in a user-friendly interface.
-  overview: Streamlit app fetches, processes, and visualizes personalized game stats and trends for users, with a focus on clarity and ease of exploration.
-  tech_stack: [Python, Streamlit, Pandas, Plotly, Lichess API]
+  description: >
+    Created a full-featured Streamlit dashboard for real-time chess analytics, using Lichess data to help players understand and improve their performance. Overcame data normalization, API integration, and visualization challenges.
+  objective: >
+    Give chess players actionable insights into their strengths, weaknesses, and progress using intuitive, customizable analytics dashboards.
+  overview: >
+    Built a responsive dashboard with Streamlit and Plotly, integrating the Lichess API to fetch and process game data. Features include rating progression, win rate breakdown, opening repertoire analysis, and exportable reports—all with advanced filtering and interactive charts.
+  tech_stack: [Python, Streamlit, pandas, Plotly, Lichess API]
   methods: |
-    - Integrated with Lichess API for real-time data retrieval and user authentication.
-    - Built interactive visualizations (openings, win rates, rating trends) using Plotly.
-    - Designed a user-friendly UI with custom filters and export capability.
-    - Managed API rate limits and inconsistent data formats through caching and preprocessing.
-  results: Users can drill down into their chess history, track improvement, and export custom reports; dashboard attracted positive feedback from the chess community.
-  impact: Helped hundreds of players target their training; learned to balance UX, data engineering, and scalability.
+    - Integrated with Lichess API for real-time game retrieval and user authentication.
+    - Built interactive visualizations for ratings, openings, win rates, and more.
+    - Implemented advanced filtering (date range, variant, game type) and export capabilities.
+    - Optimized performance with caching and parallel processing.
+  results: >
+    Helped hundreds of users analyze and improve their chess performance. Dashboard received positive feedback for its UX and actionable insights.
+  impact: >
+    Empowered chess enthusiasts to make data-driven improvements; strengthened skills in UX design, API integration, and scalable data processing.
   date: 2023-11
   images:
     - /assets/images/lichess-dashboard-overview.png
@@ -58,17 +73,22 @@
 - repo: roberta_qa
   tab: Question Answering with RoBERTa
   url: https://github.com/mpaulinv/roberta_qa
-  description: Researched and improved RoBERTa’s performance on challenging "why" questions, addressing limitations in current NLP models. Faced challenges in dataset noise and adversarial evaluation.
-  objective: Push the boundaries of machine reasoning by enabling robust, explainable QA on causal ("why") questions, which are critical for trustworthy AI.
-  overview: Evaluated RoBERTa on standard and adversarial datasets, implemented data augmentation and transfer learning, and analyzed model failures for deeper understanding.
+  description: >
+    Investigated and improved RoBERTa’s performance on challenging "why" questions in QA tasks, using data augmentation and adversarial evaluation. Analyzed model limitations in causal reasoning and robustness.
+  objective: >
+    Advance machine reasoning in NLP by enabling robust, explainable question answering on causal ("why") questions, a key hurdle for trustworthy AI.
+  overview: >
+    Systematically analyzed RoBERTa’s failures on "why" questions from SQuAD and adversarial datasets. Applied TextAttack and CLARE for data augmentation, experimented with transfer learning, and visualized error patterns. Benchmarked with custom metrics and error taxonomies.
   tech_stack: [Python, PyTorch, HuggingFace Transformers, TextAttack, matplotlib]
   methods: |
-    - Performed error analysis of model predictions and adversarial robustness.
-    - Applied data augmentation (TextAttack, CLARE) and fine-tuned on specialized QA datasets.
-    - Visualized performance disparities and error types using confusion matrices and custom plots.
-    - Tackled annotation noise with post-processing and consensus strategies.
-  results: Identified and mitigated key model weaknesses; achieved measurable accuracy gains on "why" questions through targeted training.
-  impact: Advanced understanding of NLP model limitations; informed future research directions in explainable AI.
+    - Evaluated RoBERTa on standard and adversarial QA benchmarks.
+    - Categorized errors and identified primary failure modes in causal reasoning.
+    - Applied data augmentation (synonym replacement, context perturbation) and transfer learning with Quoref.
+    - Visualized error types, performance gaps, and dataset-specific challenges.
+  results: >
+    Identified key sources of performance gaps and modestly improved adversarial robustness with fine-tuning and augmentation. Provided recommendations for future model and dataset design.
+  impact: >
+    Advanced understanding of NLP model limitations; contributed insights for building more trustworthy, explainable AI systems.
   date: 2024-04
   images:
     - /assets/images/roberta-qa-results.png
