@@ -63,9 +63,9 @@ images:
     - Implemented advanced filtering (date range, variant, game type) and export capabilities.
     - Optimized performance with caching and parallel processing.
   results: >
-    Helped hundreds of users analyze and improve their chess performance. Dashboard received positive feedback for its UX and actionable insights.
+    Developed a workable website that can extract and process data in real-time and provide insights into a production environment.
   impact: >
-    Empowered chess enthusiasts to make data-driven improvements; strengthened skills in UX design, API integration, and scalable data processing.
+    Developed skills in data processing and presentation. 
   date: 2023-11
   images:
     - /assets/images/lichess-dashboard-overview.png
