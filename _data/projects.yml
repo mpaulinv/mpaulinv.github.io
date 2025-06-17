@@ -20,8 +20,7 @@
     Delivered production-ready tools that solve real compliance challenges: handling adversarial data where criminals actively try to evade detection, working with severely imbalanced datasets where illicit transactions are rare, and meeting regulatory requirements for model explainability and temporal validation. Developed deep expertise in financial crime ML including data drift analysis, feature selection under multicollinearity, and building trust in AI systems for high-stakes regulatory decisions. Demonstrated that sophisticated feature engineering can outperform complex neural networks in specialized financial domains, providing a template for practical AML implementations.
   date: 2025-05
   images:
-    - /assets/images/elliptic-scatterplot.png
-    - /assets/images/elliptic-graph-visualization.png
+    - /assets/images/network_predictions.png
 - repo: heart_disease
   tab: Heart Disease Prediction
   url: https://github.com/mpaulinv/heart_disease
@@ -43,8 +42,8 @@
     Developed skills in model interpretability and stakeholder communication.
   date: 2025-04
   images:
-    - /assets/images/heart-feature-importance.png
-    - /assets/images/heart-roc-curve.png
+    - /assets/images/importance.png
+    - /assets/images/roc_heart.png
 - repo: lichess_dashboard
   tab: Chess Performance Dashboard
   url: https://github.com/mpaulinv/lichess_dashboard
@@ -66,8 +65,7 @@
     Developed skills in data processing and presentation.
   date: 2025-05
   images:
-    - /assets/images/lichess-dashboard-overview.png
-    - /assets/images/lichess-opening-performance.png
+    - /assets/images/dashboard.png
 - repo: roberta_qa
   tab: Question Answering with RoBERTa
   url: https://github.com/mpaulinv/roberta_qa
@@ -89,5 +87,5 @@
     Advanced understanding of NLP model limitations; contributed insights for building more trustworthy, explainable AI systems.
   date: 2024-11
   images:
-    - /assets/images/roberta-qa-results.png
-    - /assets/images/roberta-error-analysis.png
+    - /assets/images/results.png
+
