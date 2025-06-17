@@ -31,18 +31,18 @@ images:
   objective: >
     Enable explainable, early prediction of heart disease to empower clinicians and patients with evidence-based risk assessments and feature insights.
   overview: >
-    Explored and visualized the Cleveland Heart Disease dataset, engineered predictive features and interaction terms, and built interpretable models (logistic regression, Random Forest). Delivered reports on key risk factors and model performance using clinical metrics.
+    Explored and visualized the Cleveland Heart Disease dataset, engineered predictive features and interaction terms, and built interpretable models (logistic regression, Random Forest). Delivered reports on key risk factors and model performance.
   tech_stack: [Python, pandas, scikit-learn, matplotlib, seaborn]
   methods: |
     - Performed detailed EDA and feature engineering, including interaction terms and dummy variables.
     - Trained and tuned logistic regression and Random Forest models.
-    - Evaluated with clinical metrics: accuracy, precision, recall, F1, AUC.
+    - Evaluated with performance metrics: accuracy, precision, recall, F1, AUC.
     - Interpreted coefficients and feature importance for actionable insights.
   results: >
     Achieved robust predictive accuracy; identified and explained the main clinical risk factors for heart disease. Produced transparent reports for non-technical stakeholders.
   impact: >
-    Provided clinicians and patients with interpretable, data-driven risk tools. Developed skills in model interpretability and stakeholder communication.
-  date: 2024-01
+    Developed skills in model interpretability and stakeholder communication.
+  date: 2025-04
   images:
     - /assets/images/heart-feature-importance.png
     - /assets/images/heart-roc-curve.png
