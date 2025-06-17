@@ -35,7 +35,7 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   color: var(--text-main);
   font-size: 1.1em;
   margin-bottom: 2em;
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,17 +50,17 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   background: var(--bg);
   padding-left: 0.5em;
   justify-content: center;
-  max-width: 950px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .project-tab {
-  padding: 0.8em 1.9em 0.7em 1.9em;
+  padding: 1em 2.3em 0.9em 2.3em;
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 1.08em;
+  font-size: 1.25em;
   font-weight: 500;
   color: var(--text-main);
   border-bottom: 2.5px solid transparent;
@@ -87,16 +87,16 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 /* Project content area */
 .project-content {
   display: none;
-  max-width: 950px;
+  max-width: 1140px;
   margin: 0 auto 2.2em auto;
-  padding: 2.1em 2.2em 2.2em 2.2em;
+  padding: 2.6em 2.8em 2.8em 2.8em;
   background: #fff;
   border: 2px solid var(--border);
   border-top: none;
   border-radius: 0 0 14px 14px;
   word-break: break-word;
   overflow-wrap: anywhere;
-  font-size: 1.09em;
+  font-size: 1.18em;
   box-sizing: border-box;
   position: relative;
   top: -2px;
@@ -113,7 +113,7 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 }
 
 .project-title {
-  font-size: 1.37rem;
+  font-size: 1.55rem;
   font-weight: 700;
   margin: 0 0 0.3em 0;
   color: var(--text-main);
@@ -121,12 +121,12 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 }
 
 .project-meta, .project-tech {
-  font-size: 0.99em;
+  font-size: 1.09em;
   color: var(--text-muted);
   margin-bottom: 0.7em;
 }
 .project-section-title {
-  font-size: 1.12em;
+  font-size: 1.23em;
   font-weight: 600;
   color: var(--text-main);
   margin-bottom: 0.35em;
@@ -135,14 +135,14 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 }
 
 .project-summary {
-  font-size: 1.04em;
+  font-size: 1.13em;
   color: var(--text-main);
   margin-bottom: 0.9em;
   font-weight: 500;
 }
 
 .project-description {
-  font-size: 1em;
+  font-size: 1.09em;
   color: var(--text-main);
   margin-bottom: 1.2em;
   line-height: 1.6;
@@ -156,22 +156,22 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   margin-top: 1em;
 }
 .project-images img {
-  max-width: 340px;
+  max-width: 420px;
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: #e5e7eb;
 }
-@media (max-width: 1050px) {
-  .project-content, .project-tabs { max-width: 99vw; }
+@media (max-width: 1300px) {
+  .project-content, .project-tabs { max-width: 98vw; }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .project-content { padding: 1.3em 0.5em 1.5em 0.5em; }
   .project-images { flex-direction: column; gap: 1em; }
   .project-images img { max-width: 100%; }
   .projects-title { font-size: 1.35rem; }
   .projects-intro { font-size: 1em; }
-  .project-tab { padding: 0.6em 1em 0.6em 1em; }
+  .project-tab { padding: 0.6em 1em 0.6em 1em; font-size: 1em;}
 }
 
 /* Badges & tags */
@@ -182,7 +182,7 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   display: inline-block;
   background: #eef1f7;
   color: var(--text-muted);
-  font-size: 0.95em;
+  font-size: 1.02em;
   border-radius: 7px;
   padding: 0.22em 0.88em;
   margin: 0 0.37em 0.37em 0;
@@ -203,12 +203,12 @@ a:hover {
 a.btn {
   background: var(--accent);
   color: #fff !important;
-  padding: 0.45em 1.2em;
+  padding: 0.55em 1.4em;
   border: none;
   border-radius: 7px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.08em;
   transition: background 0.15s, box-shadow 0.13s;
   box-shadow: 0 2px 8px rgba(80,90,120,0.10);
   display: inline-block;
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
       contents.forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
       contents[idx].classList.add('active');
-      if (window.innerWidth < 700) {
+      if (window.innerWidth < 900) {
         contents[idx].scrollIntoView({behavior: 'smooth', block: 'start'});
       }
     });
