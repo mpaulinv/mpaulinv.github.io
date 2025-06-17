@@ -6,7 +6,7 @@ layout: single
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5em; flex-wrap: wrap; gap: 1em;">
   <h1 style="margin: 0; font-size: 2.2rem; font-weight: 700; color: #1a202c;">Mario Paulin Vega</h1>
-  <a href="/assets/files/mario-paulin-vega-cv.pdf" download style="background: #667eea; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2); transition: all 0.3s ease;">
+  <a href="/assets/files/cv_mapv_0625_ats.pdf" download style="background: #667eea; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2); transition: all 0.3s ease;">
     📥 Download PDF
   </a>
 </div>
@@ -14,6 +14,21 @@ layout: single
 <div style="border-bottom: 2px solid #e2e8f0; margin-bottom: 2em; padding-bottom: 1em;">
   <h2 style="color: #4a5568; font-size: 1.1rem; font-weight: 400; margin: 0;">Data Science | Economics | Analytics & Machine Learning</h2>
   <p style="color: #718096; margin: 0.5em 0 0 0;">📧 mpaulinv@gmail.com | 🔗 <a href="https://www.linkedin.com/in/mario-paulin-vega/" style="color: #718096; text-decoration: none;">LinkedIn</a> | 💻 <a href="https://github.com/mpaulinv" style="color: #718096; text-decoration: none;">GitHub</a></p>
+</div>
+
+<div style="border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; margin-bottom: 2em;">
+  <iframe
+    src="/assets/files/cv_mapv_0625_ats.pdf#toolbar=0"
+    width="100%"
+    height="900px"
+    style="border:0; min-height:70vh;"
+    title="Curriculum Vitae PDF"
+    loading="lazy"
+  >
+    <p>Your browser does not support embedded PDFs. 
+      <a href="/assets/files/cv_mapv_0625_ats.pdf" target="_blank">Download here.</a>
+    </p>
+  </iframe>
 </div>
 
 ## Education
@@ -29,7 +44,7 @@ Bachelor in Economics, Finance Track, With Honors
 ## Professional Experience
 
 ### Team Lead | CitiBanamex, Anti-Money Laundering Division | Mexico City, Mexico | 2020 – 2024
-- Led a team of 3 data scientists validating  around 100 regulatory models across LATAM, US, and Canada, achieving zero audit findings.
+- Led a team of 3 data scientists validating around 100 regulatory models across LATAM, US, and Canada, achieving zero audit findings.
 - Integrated validation insights into compliance workflows, improving data integrity and strategic decision-making.
 - Streamlined global processes through automation and developed methodologies for more efficient operations.
 - Mentored junior team members and led initiatives that improved control processes by 15%.
@@ -74,6 +89,7 @@ Bachelor in Economics, Finance Track, With Honors
 - Spanish (Native)  
 - English (Fluent)
 - Italian (Elementary)
+
 <style>
 /* Professional styling for CV */
 h2 {
