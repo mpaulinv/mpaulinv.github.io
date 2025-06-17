@@ -9,15 +9,11 @@ layout: single
 <style>
 :root {
   --accent: #2563eb;
-  --accent-dark: #1e40af;
+  --accent-light: #e8f1ff;
   --bg: #f8fafc;
-  --card-bg: #fff;
   --border: #e5e7eb;
-  --text-main: #23272f;
-  --text-muted: #6b7280;
-  --badge-bg: #e0e7ef;
-  --badge-text: #2563eb;
-  --shadow: 0 4px 24px rgba(80,90,120,0.08);
+  --text-main: #222;
+  --text-muted: #60646c;
 }
 
 body, .project-content, .project-tab, .project-section-title, .project-meta, .project-tech {
@@ -28,17 +24,17 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 
 .projects-title {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin: 0.1em 0 0.25em 0;
   font-weight: 700;
   letter-spacing: -1px;
-  color: var(--accent-dark);
+  color: var(--text-main);
 }
 .projects-intro {
   text-align: center;
-  color: var(--text-muted);
-  font-size: 1.15em;
-  margin-bottom: 2.5em;
+  color: var(--text-main);
+  font-size: 1.1em;
+  margin-bottom: 2em;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -49,55 +45,61 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   display: flex;
   flex-wrap: wrap;
   border-bottom: 2px solid var(--border);
-  margin-bottom: 2em;
+  margin-bottom: 0;
   gap: 0.5em;
   background: var(--bg);
   padding-left: 0.5em;
   justify-content: center;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-tab {
-  padding: 0.7em 1.3em;
+  padding: 0.8em 1.9em 0.7em 1.9em;
   cursor: pointer;
-  background: #f5f6fa;
+  background: none;
   border: none;
   font-size: 1.08em;
   font-weight: 500;
-  color: var(--text-muted);
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s;
-  border-radius: 10px 10px 0 0;
-  outline: none;
+  color: var(--text-main);
+  border-bottom: 2.5px solid transparent;
+  border-radius: 8px 8px 0 0;
   letter-spacing: 0.01em;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  outline: none;
+  margin-bottom: -2px;
+  position: relative;
 }
 
 .project-tab.active {
-  color: var(--accent);
-  background: #fff;
   border-bottom: 2.5px solid var(--accent);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  position: relative;
+  background: #fff;
+  color: var(--text-main);
   z-index: 2;
 }
 
 .project-tab:focus {
+  background: var(--accent-light);
   outline: none;
-  box-shadow: 0 0 0 2px #b8e5f5;
-  background: #f0fbff;
 }
 
 /* Project content area */
 .project-content {
   display: none;
-  max-width: 750px;
-  margin: 0 auto 2.5em auto;
-  padding: 2.2em 1.5em 2.5em 1.5em;
+  max-width: 950px;
+  margin: 0 auto 2.2em auto;
+  padding: 2.1em 2.2em 2.2em 2.2em;
   background: #fff;
-  border-radius: 14px;
-  box-shadow: var(--shadow);
+  border: 2px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
   word-break: break-word;
   overflow-wrap: anywhere;
-  font-size: 1.07em;
+  font-size: 1.09em;
+  box-sizing: border-box;
+  position: relative;
+  top: -2px;
 }
 
 .project-content.active {
@@ -111,10 +113,10 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 }
 
 .project-title {
-  font-size: 1.4rem;
+  font-size: 1.37rem;
   font-weight: 700;
-  margin: 0 0 0.35em 0;
-  color: var(--accent-dark);
+  margin: 0 0 0.3em 0;
+  color: var(--text-main);
   letter-spacing: -0.5px;
 }
 
@@ -124,9 +126,9 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   margin-bottom: 0.7em;
 }
 .project-section-title {
-  font-size: 1.10em;
+  font-size: 1.12em;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--text-main);
   margin-bottom: 0.35em;
   margin-top: 1.25em;
   letter-spacing: 0.01em;
@@ -141,7 +143,7 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 
 .project-description {
   font-size: 1em;
-  color: var(--text-muted);
+  color: var(--text-main);
   margin-bottom: 1.2em;
   line-height: 1.6;
 }
@@ -157,16 +159,19 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   max-width: 340px;
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(80,90,120,0.10);
   border: 1px solid var(--border);
   background: #e5e7eb;
 }
+@media (max-width: 1050px) {
+  .project-content, .project-tabs { max-width: 99vw; }
+}
 @media (max-width: 700px) {
-  .project-content { padding: 1.3em 0.4em 2em 0.4em; }
+  .project-content { padding: 1.3em 0.5em 1.5em 0.5em; }
   .project-images { flex-direction: column; gap: 1em; }
   .project-images img { max-width: 100%; }
-  .projects-title { font-size: 1.5rem; }
+  .projects-title { font-size: 1.35rem; }
   .projects-intro { font-size: 1em; }
+  .project-tab { padding: 0.6em 1em 0.6em 1em; }
 }
 
 /* Badges & tags */
@@ -175,8 +180,8 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
 }
 .tag {
   display: inline-block;
-  background: var(--badge-bg);
-  color: var(--badge-text);
+  background: #eef1f7;
+  color: var(--text-muted);
   font-size: 0.95em;
   border-radius: 7px;
   padding: 0.22em 0.88em;
@@ -185,17 +190,18 @@ body, .project-content, .project-tab, .project-section-title, .project-meta, .pr
   letter-spacing: 0.02em;
 }
 
+/* Buttons */
 a, a:visited {
   color: var(--accent);
   text-decoration: underline;
   transition: color .15s;
 }
 a:hover {
-  color: var(--accent-dark);
+  color: var(--accent);
   text-decoration: underline;
 }
 a.btn {
-  background: linear-gradient(90deg, var(--accent) 0%, #4dd0e1 100%);
+  background: var(--accent);
   color: #fff !important;
   padding: 0.45em 1.2em;
   border: none;
@@ -209,15 +215,15 @@ a.btn {
   margin-top: 1.1em;
 }
 a.btn:hover {
-  background: linear-gradient(90deg, var(--accent-dark) 0%, #00bcd4 100%);
+  background: var(--accent-light);
+  color: var(--accent) !important;
   box-shadow: 0 4px 18px rgba(40,60,140,0.13);
 }
 </style>
 
 <h1 class="projects-title">Projects</h1>
 <p class="projects-intro">
-  Explore my technical work. Select a project tab to see details, images, key methods, and results.<br>
-  <span style="color: #2563eb; font-weight:500;">Each project is fully described below with images and links.</span>
+  Select a project tab to see details, images, key methods, and results.
 </p>
 
 <!-- Tab navigation -->
@@ -258,7 +264,6 @@ a.btn:hover {
       </div>
     {% endif %}
     <div class="project-description">{{ project.description }}</div>
-
     {% if project.objective %}
       <div class="project-section-title">Objective</div>
       <p>{{ project.objective }}</p>
@@ -281,7 +286,7 @@ a.btn:hover {
     {% endif %}
     <a href="{{ project.url }}" class="btn" target="_blank" rel="noopener">View on GitHub</a>
     {% if project.demo %}
-      <a href="{{ project.demo }}" class="btn" target="_blank" rel="noopener" style="background: #e0e7ef; color: #2563eb !important; margin-left:1em;">Live Demo</a>
+      <a href="{{ project.demo }}" class="btn" target="_blank" rel="noopener" style="background: #eef1f7; color: #2563eb !important; margin-left:1em;">Live Demo</a>
     {% endif %}
   </div>
 {% endfor %}
@@ -296,7 +301,6 @@ document.addEventListener('DOMContentLoaded', function() {
       contents.forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
       contents[idx].classList.add('active');
-      // Scroll to top of content area on mobile
       if (window.innerWidth < 700) {
         contents[idx].scrollIntoView({behavior: 'smooth', block: 'start'});
       }
