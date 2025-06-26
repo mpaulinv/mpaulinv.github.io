@@ -6,7 +6,7 @@
 
   <!-- About Text -->
   <div style="flex: 1; min-width: 300px;">
-    <h2 style="font-size: 1.2rem; font-weight: 400; color: #4a5568; margin-bottom: 1.5em; letter-spacing: 0.5px; margin-top: 0;">Data Science | Economics | Machine Learning</h2>
+    <h2 style="font-size: 1.2rem; font-weight: 400; color: #4a5568; margin-bottom: 1.5em; letter-spacing: 0.5px; margin-top: 0;">Data Science | Analytics & Machine Learning | Econometrics</h2>
 
     <p style="font-size: 1.05rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.2em;">
       Welcome to my portfolio. I’m a Data Scientist with a background in economics and a genuine enthusiasm for making sense of complex data. Over the years, I’ve had the chance to lead teams and projects in the financial        sector using analytics and machine learning to solve real business challenges.
